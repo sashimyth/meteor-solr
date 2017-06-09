@@ -1,0 +1,46 @@
+.search-bar
+  padding 10px 0 0 0
+  width 100%
+  margin-top 3px
+  form
+    border none
+    .input-group
+      width 100%
+      .input-group-addon
+        width 1%
+  .search-reset
+    padding-left 15px
+
+.close-suggestions
+  position absolute
+  top 60px
+  z-index 10
+  left 10px
+
+.search-suggestions
+  position absolute
+  z-index 1
+  margin-top -3px
+  .list-group-item.active,
+  .list-group-item.active:hover,
+  .list-group-item.active:focus
+    color inherit
+    background-color #f5f5f5
+    border-color #ddd
+
++below($mobileCutOff)
+  .search-bar
+    padding-top 0
+    form
+      margin-bottom 0
+    .search-reset
+      padding 0
+      text-align right
+    input
+      font-size 16px
+  .close-suggestions
+    top 38px
+    left 4px
+  .search-suggestions
+    font-size 12px
+    max-width 290px

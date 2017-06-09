@@ -1,0 +1,73 @@
+2017-06-08 07:06:22.623 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.14.v20161028
+2017-06-08 07:06:24.004 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 6.5.1
+2017-06-08 07:06:24.004 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2017-06-08 07:06:24.004 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: D:\Playground\solr-6.5.1
+2017-06-08 07:06:24.072 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2017-06-08T07:06:24.007Z
+2017-06-08 07:06:24.073 INFO  (main) [   ] o.a.s.s.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2017-06-08 07:06:24.233 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: D:\Playground\solr-6.5.1\server\solr
+2017-06-08 07:06:24.250 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from D:\Playground\solr-6.5.1\server\solr\solr.xml
+2017-06-08 07:06:25.631 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2017-06-08 07:06:31.269 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath D:\Playground\solr-6.5.1\server\solr
+2017-06-08 07:06:31.293 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [Wakuwaku]
+2017-06-08 07:06:31.919 INFO  (coreLoadExecutor-6-thread-1) [   x:Wakuwaku] o.a.s.c.SolrResourceLoader [Wakuwaku] Added 51 libs to classloader, from paths: [/D:/Playground/solr-6.5.1/contrib/clustering/lib, /D:/Playground/solr-6.5.1/contrib/extraction/lib, /D:/Playground/solr-6.5.1/contrib/langid/lib, /D:/Playground/solr-6.5.1/contrib/velocity/lib, /D:/Playground/solr-6.5.1/dist]
+2017-06-08 07:06:32.534 INFO  (main) [   ] o.e.j.s.Server Started @14985ms
+2017-06-08 07:06:37.586 INFO  (qtp1543727556-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=4564
+2017-06-08 07:06:37.703 INFO  (coreLoadExecutor-6-thread-1) [   x:Wakuwaku] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.5.1
+2017-06-08 07:06:38.203 INFO  (coreLoadExecutor-6-thread-1) [   x:Wakuwaku] o.a.s.s.IndexSchema [Wakuwaku] Schema name=example-data-driven-schema
+2017-06-08 07:06:38.993 WARN  (coreLoadExecutor-6-thread-1) [   x:Wakuwaku] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.SynonymFilterFactory]. Please consult documentation how to replace it accordingly.
+2017-06-08 07:06:39.014 WARN  (coreLoadExecutor-6-thread-1) [   x:Wakuwaku] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.WordDelimiterFilterFactory]. Please consult documentation how to replace it accordingly.
+2017-06-08 07:06:40.252 INFO  (coreLoadExecutor-6-thread-1) [   x:Wakuwaku] o.a.s.s.IndexSchema Loaded schema example-data-driven-schema/1.6 with uniqueid field id
+2017-06-08 07:06:40.366 INFO  (coreLoadExecutor-6-thread-1) [   x:Wakuwaku] o.a.s.c.CoreContainer Creating SolrCore 'Wakuwaku' using configuration from instancedir D:\Playground\solr-6.5.1\server\solr\Wakuwaku
+2017-06-08 07:06:40.566 INFO  (coreLoadExecutor-6-thread-1) [   x:Wakuwaku] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2017-06-08 07:06:40.593 INFO  (coreLoadExecutor-6-thread-1) [   x:Wakuwaku] o.a.s.c.SolrCore [[Wakuwaku] ] Opening new SolrCore at [D:\Playground\solr-6.5.1\server\solr\Wakuwaku], dataDir=[D:\Playground\solr-6.5.1\server\solr\Wakuwaku\data\]
+2017-06-08 07:06:40.602 INFO  (coreLoadExecutor-6-thread-1) [   x:Wakuwaku] o.a.s.c.JmxMonitoredMap JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@750e2b97
+2017-06-08 07:06:40.971 INFO  (coreLoadExecutor-6-thread-1) [   x:Wakuwaku] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2017-06-08 07:06:56.746 INFO  (coreLoadExecutor-6-thread-1) [   x:Wakuwaku] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2017-06-08 07:06:56.746 INFO  (coreLoadExecutor-6-thread-1) [   x:Wakuwaku] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2017-06-08 07:06:56.964 INFO  (coreLoadExecutor-6-thread-1) [   x:Wakuwaku] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2017-06-08 07:06:56.965 INFO  (coreLoadExecutor-6-thread-1) [   x:Wakuwaku] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2017-06-08 07:06:57.691 INFO  (coreLoadExecutor-6-thread-1) [   x:Wakuwaku] o.a.s.s.SolrIndexSearcher Opening [Searcher@6efde5a6[Wakuwaku] main]
+2017-06-08 07:06:57.729 INFO  (coreLoadExecutor-6-thread-1) [   x:Wakuwaku] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: D:\Playground\solr-6.5.1\server\solr\Wakuwaku\conf
+2017-06-08 07:06:57.786 INFO  (coreLoadExecutor-6-thread-1) [   x:Wakuwaku] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2017-06-08 07:06:57.829 INFO  (coreLoadExecutor-6-thread-1) [   x:Wakuwaku] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2017-06-08 07:06:57.837 INFO  (coreLoadExecutor-6-thread-1) [   x:Wakuwaku] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: D:\Playground\solr-6.5.1\server\solr\Wakuwaku\conf\elevate.xml
+2017-06-08 07:06:57.893 INFO  (coreLoadExecutor-6-thread-1) [   x:Wakuwaku] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2017-06-08 07:06:58.056 INFO  (searcherExecutor-7-thread-1-processing-x:Wakuwaku) [   x:Wakuwaku] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@6efde5a6[Wakuwaku] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(6.5.1):C52/32:delGen=1) Uninverting(_3(6.5.1):C32)))}
+2017-06-08 07:06:58.056 INFO  (searcherExecutor-7-thread-1-processing-x:Wakuwaku) [   x:Wakuwaku] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-06-08 07:06:58.056 INFO  (searcherExecutor-7-thread-1-processing-x:Wakuwaku) [   x:Wakuwaku] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2017-06-08 07:06:58.066 INFO  (searcherExecutor-7-thread-1-processing-x:Wakuwaku) [   x:Wakuwaku] o.a.s.c.SolrCore [Wakuwaku] Registered new searcher Searcher@6efde5a6[Wakuwaku] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(6.5.1):C52/32:delGen=1) Uninverting(_3(6.5.1):C32)))}
+2017-06-08 07:07:17.902 INFO  (qtp1543727556-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=10
+2017-06-08 07:07:17.950 INFO  (qtp1543727556-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=8
+2017-06-08 07:07:17.961 INFO  (qtp1543727556-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=test&action=STATUS&wt=json} status=0 QTime=1
+2017-06-08 07:07:18.290 INFO  (qtp1543727556-14) [   ] o.a.s.h.a.CoreAdminOperation core create command name=test&action=CREATE&instanceDir=test&wt=json
+2017-06-08 07:07:18.325 INFO  (qtp1543727556-14) [   x:test] o.a.s.c.SolrResourceLoader [test] Added 51 libs to classloader, from paths: [/D:/Playground/solr-6.5.1/contrib/clustering/lib, /D:/Playground/solr-6.5.1/contrib/extraction/lib, /D:/Playground/solr-6.5.1/contrib/langid/lib, /D:/Playground/solr-6.5.1/contrib/velocity/lib, /D:/Playground/solr-6.5.1/dist]
+2017-06-08 07:07:18.368 INFO  (qtp1543727556-14) [   x:test] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.5.1
+2017-06-08 07:07:18.432 INFO  (qtp1543727556-14) [   x:test] o.a.s.s.IndexSchema [test] Schema name=example-data-driven-schema
+2017-06-08 07:07:18.768 INFO  (qtp1543727556-14) [   x:test] o.a.s.s.IndexSchema Loaded schema example-data-driven-schema/1.6 with uniqueid field id
+2017-06-08 07:07:18.820 INFO  (qtp1543727556-14) [   x:test] o.a.s.c.CoreContainer Creating SolrCore 'test' using configuration from instancedir D:\Playground\solr-6.5.1\server\solr\test
+2017-06-08 07:07:18.821 INFO  (qtp1543727556-14) [   x:test] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2017-06-08 07:07:18.821 INFO  (qtp1543727556-14) [   x:test] o.a.s.c.SolrCore [[test] ] Opening new SolrCore at [D:\Playground\solr-6.5.1\server\solr\test], dataDir=[D:\Playground\solr-6.5.1\server\solr\test\data\]
+2017-06-08 07:07:18.821 INFO  (qtp1543727556-14) [   x:test] o.a.s.c.JmxMonitoredMap JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@750e2b97
+2017-06-08 07:07:18.919 INFO  (qtp1543727556-14) [   x:test] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2017-06-08 07:07:23.607 INFO  (qtp1543727556-14) [   x:test] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2017-06-08 07:07:23.607 INFO  (qtp1543727556-14) [   x:test] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2017-06-08 07:07:23.609 INFO  (qtp1543727556-14) [   x:test] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2017-06-08 07:07:23.610 INFO  (qtp1543727556-14) [   x:test] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2017-06-08 07:07:23.613 INFO  (qtp1543727556-14) [   x:test] o.a.s.s.SolrIndexSearcher Opening [Searcher@6e4b4290[test] main]
+2017-06-08 07:07:23.615 INFO  (qtp1543727556-14) [   x:test] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: D:\Playground\solr-6.5.1\server\solr\test\conf
+2017-06-08 07:07:23.615 INFO  (qtp1543727556-14) [   x:test] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2017-06-08 07:07:23.616 INFO  (qtp1543727556-14) [   x:test] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2017-06-08 07:07:23.617 INFO  (qtp1543727556-14) [   x:test] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: D:\Playground\solr-6.5.1\server\solr\test\conf\elevate.xml
+2017-06-08 07:07:23.621 INFO  (qtp1543727556-14) [   x:test] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2017-06-08 07:07:23.622 INFO  (searcherExecutor-12-thread-1-processing-x:test) [   x:test] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@6e4b4290[test] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2017-06-08 07:07:23.622 INFO  (searcherExecutor-12-thread-1-processing-x:test) [   x:test] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-06-08 07:07:23.622 INFO  (searcherExecutor-12-thread-1-processing-x:test) [   x:test] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2017-06-08 07:07:23.625 INFO  (searcherExecutor-12-thread-1-processing-x:test) [   x:test] o.a.s.c.SolrCore [test] Registered new searcher Searcher@6e4b4290[test] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2017-06-08 07:07:23.630 INFO  (qtp1543727556-14) [   x:test] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1569619332174970880
+2017-06-08 07:07:23.640 INFO  (qtp1543727556-14) [   x:test] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=test&action=CREATE&instanceDir=test&wt=json} status=0 QTime=5350
+2017-06-08 07:14:22.519 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1667148529
+2017-06-08 07:14:22.521 INFO  (coreCloseExecutor-17-thread-1) [   x:Wakuwaku] o.a.s.c.SolrCore [Wakuwaku]  CLOSING SolrCore org.apache.solr.core.SolrCore@715c62bd
+2017-06-08 07:14:22.521 INFO  (coreCloseExecutor-17-thread-2) [   x:test] o.a.s.c.SolrCore [test]  CLOSING SolrCore org.apache.solr.core.SolrCore@56f627d3
+2017-06-08 07:14:22.763 INFO  (coreCloseExecutor-17-thread-1) [   x:Wakuwaku] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.core.Wakuwaku
+2017-06-08 07:14:22.767 INFO  (coreCloseExecutor-17-thread-2) [   x:test] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.core.test
+2017-06-08 07:14:22.816 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.node

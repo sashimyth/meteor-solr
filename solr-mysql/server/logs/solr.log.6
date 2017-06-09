@@ -1,0 +1,400 @@
+2017-06-08 01:48:53.884 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.14.v20161028
+2017-06-08 01:48:54.898 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 6.5.1
+2017-06-08 01:48:54.899 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2017-06-08 01:48:54.899 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: D:\Playground\solr-6.5.1
+2017-06-08 01:48:54.942 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2017-06-08T01:48:54.900Z
+2017-06-08 01:48:54.943 INFO  (main) [   ] o.a.s.s.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2017-06-08 01:48:55.015 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: D:\Playground\solr-6.5.1\server\solr
+2017-06-08 01:48:55.031 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from D:\Playground\solr-6.5.1\server\solr\solr.xml
+2017-06-08 01:48:55.936 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2017-06-08 01:49:00.786 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath D:\Playground\solr-6.5.1\server\solr
+2017-06-08 01:49:00.821 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [Wakuwaku]
+2017-06-08 01:49:01.181 INFO  (coreLoadExecutor-6-thread-1) [   x:Wakuwaku] o.a.s.c.SolrResourceLoader [Wakuwaku] Added 51 libs to classloader, from paths: [/D:/Playground/solr-6.5.1/contrib/clustering/lib, /D:/Playground/solr-6.5.1/contrib/extraction/lib, /D:/Playground/solr-6.5.1/contrib/langid/lib, /D:/Playground/solr-6.5.1/contrib/velocity/lib, /D:/Playground/solr-6.5.1/dist]
+2017-06-08 01:49:01.818 INFO  (main) [   ] o.e.j.s.Server Started @11943ms
+2017-06-08 01:49:02.251 INFO  (qtp1543727556-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=261
+2017-06-08 01:49:04.630 INFO  (coreLoadExecutor-6-thread-1) [   x:Wakuwaku] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.5.1
+2017-06-08 01:49:05.047 INFO  (coreLoadExecutor-6-thread-1) [   x:Wakuwaku] o.a.s.s.IndexSchema [Wakuwaku] Schema name=example-data-driven-schema
+2017-06-08 01:49:05.631 WARN  (coreLoadExecutor-6-thread-1) [   x:Wakuwaku] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.SynonymFilterFactory]. Please consult documentation how to replace it accordingly.
+2017-06-08 01:49:05.642 WARN  (coreLoadExecutor-6-thread-1) [   x:Wakuwaku] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.WordDelimiterFilterFactory]. Please consult documentation how to replace it accordingly.
+2017-06-08 01:49:06.215 INFO  (coreLoadExecutor-6-thread-1) [   x:Wakuwaku] o.a.s.s.IndexSchema Loaded schema example-data-driven-schema/1.6 with uniqueid field id
+2017-06-08 01:49:06.305 INFO  (coreLoadExecutor-6-thread-1) [   x:Wakuwaku] o.a.s.c.CoreContainer Creating SolrCore 'Wakuwaku' using configuration from instancedir D:\Playground\solr-6.5.1\server\solr\Wakuwaku
+2017-06-08 01:49:06.329 INFO  (coreLoadExecutor-6-thread-1) [   x:Wakuwaku] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2017-06-08 01:49:06.336 INFO  (coreLoadExecutor-6-thread-1) [   x:Wakuwaku] o.a.s.c.SolrCore [[Wakuwaku] ] Opening new SolrCore at [D:\Playground\solr-6.5.1\server\solr\Wakuwaku], dataDir=[D:\Playground\solr-6.5.1\server\solr\Wakuwaku\data\]
+2017-06-08 01:49:06.348 INFO  (coreLoadExecutor-6-thread-1) [   x:Wakuwaku] o.a.s.c.JmxMonitoredMap JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@750e2b97
+2017-06-08 01:49:06.488 INFO  (coreLoadExecutor-6-thread-1) [   x:Wakuwaku] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2017-06-08 01:49:11.602 INFO  (coreLoadExecutor-6-thread-1) [   x:Wakuwaku] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2017-06-08 01:49:11.602 INFO  (coreLoadExecutor-6-thread-1) [   x:Wakuwaku] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2017-06-08 01:49:11.722 INFO  (coreLoadExecutor-6-thread-1) [   x:Wakuwaku] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2017-06-08 01:49:11.723 INFO  (coreLoadExecutor-6-thread-1) [   x:Wakuwaku] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2017-06-08 01:49:12.027 INFO  (coreLoadExecutor-6-thread-1) [   x:Wakuwaku] o.a.s.s.SolrIndexSearcher Opening [Searcher@7b95cdca[Wakuwaku] main]
+2017-06-08 01:49:12.039 INFO  (coreLoadExecutor-6-thread-1) [   x:Wakuwaku] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: D:\Playground\solr-6.5.1\server\solr\Wakuwaku\conf
+2017-06-08 01:49:12.061 INFO  (coreLoadExecutor-6-thread-1) [   x:Wakuwaku] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2017-06-08 01:49:12.070 INFO  (coreLoadExecutor-6-thread-1) [   x:Wakuwaku] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2017-06-08 01:49:12.074 INFO  (coreLoadExecutor-6-thread-1) [   x:Wakuwaku] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: D:\Playground\solr-6.5.1\server\solr\Wakuwaku\conf\elevate.xml
+2017-06-08 01:49:12.092 INFO  (coreLoadExecutor-6-thread-1) [   x:Wakuwaku] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2017-06-08 01:49:12.127 INFO  (searcherExecutor-7-thread-1-processing-x:Wakuwaku) [   x:Wakuwaku] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@7b95cdca[Wakuwaku] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(6.5.1):C52)))}
+2017-06-08 01:49:12.127 INFO  (searcherExecutor-7-thread-1-processing-x:Wakuwaku) [   x:Wakuwaku] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-06-08 01:49:12.127 INFO  (searcherExecutor-7-thread-1-processing-x:Wakuwaku) [   x:Wakuwaku] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2017-06-08 01:49:12.132 INFO  (searcherExecutor-7-thread-1-processing-x:Wakuwaku) [   x:Wakuwaku] o.a.s.c.SolrCore [Wakuwaku] Registered new searcher Searcher@7b95cdca[Wakuwaku] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(6.5.1):C52)))}
+2017-06-08 01:49:33.263 INFO  (qtp1543727556-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1496886571794} status=0 QTime=1
+2017-06-08 01:49:33.280 INFO  (qtp1543727556-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1496886571795} status=0 QTime=13
+2017-06-08 01:49:33.287 INFO  (qtp1543727556-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1496886571795} status=0 QTime=12
+2017-06-08 01:49:38.700 INFO  (qtp1543727556-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1496886571794} status=0 QTime=0
+2017-06-08 01:49:38.718 INFO  (qtp1543727556-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1496886571795} status=0 QTime=10
+2017-06-08 01:49:38.719 INFO  (qtp1543727556-17) [   x:Wakuwaku] o.a.s.c.S.Request [Wakuwaku]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1496886578573} status=0 QTime=6
+2017-06-08 01:49:38.726 INFO  (qtp1543727556-16) [   x:Wakuwaku] o.a.s.c.S.Request [Wakuwaku]  webapp=/solr path=/replication params={wt=json&command=details&_=1496886578573} status=0 QTime=3
+2017-06-08 01:49:38.738 INFO  (qtp1543727556-18) [   x:Wakuwaku] o.a.s.c.S.Request [Wakuwaku]  webapp=/solr path=/admin/system params={wt=json&_=1496886578573} status=0 QTime=8
+2017-06-08 01:49:38.742 INFO  (qtp1543727556-19) [   x:Wakuwaku] o.a.s.c.S.Request [Wakuwaku]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1496886571796&ts=1496886571796} status=503 QTime=3
+2017-06-08 01:50:55.626 INFO  (qtp1543727556-17) [   x:Wakuwaku] o.a.s.u.p.LogUpdateProcessorFactory [Wakuwaku]  webapp=/solr path=/update params={}{add=[GB18030TEST (1569599421743628288)]} 0 215
+2017-06-08 01:50:55.756 INFO  (qtp1543727556-22) [   x:Wakuwaku] o.a.s.u.p.LogUpdateProcessorFactory [Wakuwaku]  webapp=/solr path=/update params={}{add=[SP2514N (1569599421917691904), 6H500F0 (1569599421942857728)]} 0 66
+2017-06-08 01:50:55.788 INFO  (qtp1543727556-18) [   x:Wakuwaku] o.a.s.u.p.LogUpdateProcessorFactory [Wakuwaku]  webapp=/solr path=/update params={}{add=[F8V7067-APL-KIT (1569599421972217856), IW-02 (1569599421976412160)]} 0 8
+2017-06-08 01:50:55.806 INFO  (qtp1543727556-20) [   x:Wakuwaku] o.a.s.u.p.LogUpdateProcessorFactory [Wakuwaku]  webapp=/solr path=/update params={}{add=[MA147LL/A (1569599421992140800)]} 0 8
+2017-06-08 01:50:55.833 INFO  (qtp1543727556-13) [   x:Wakuwaku] o.a.s.u.p.LogUpdateProcessorFactory [Wakuwaku]  webapp=/solr path=/update params={}{add=[adata (1569599422008918016), apple (1569599422012063744), asus (1569599422013112320), ati (1569599422015209472), belkin (1569599422016258048), canon (1569599422017306624), corsair (1569599422019403776), dell (1569599422020452352), maxtor (1569599422022549504), samsung (1569599422023598080), ... (11 adds)]} 0 17
+2017-06-08 01:50:55.871 INFO  (qtp1543727556-16) [   x:Wakuwaku] o.a.s.u.p.LogUpdateProcessorFactory [Wakuwaku]  webapp=/solr path=/update params={}{add=[TWINX2048-3200PRO (1569599422038278144), VS1GB400C3 (1569599422043521024), VDBDB1A16 (1569599422046666752)]} 0 28
+2017-06-08 01:50:55.895 INFO  (qtp1543727556-15) [   x:Wakuwaku] o.a.s.u.p.LogUpdateProcessorFactory [Wakuwaku]  webapp=/solr path=/update params={}{add=[USD (1569599422084415488), EUR (1569599422087561216), GBP (1569599422088609792), NOK (1569599422090706944)]} 0 8
+2017-06-08 01:50:55.908 INFO  (qtp1543727556-19) [   x:Wakuwaku] o.a.s.u.p.LogUpdateProcessorFactory [Wakuwaku]  webapp=/solr path=/update params={}{add=[3007WFP (1569599422103289856)]} 0 3
+2017-06-08 01:50:55.914 INFO  (qtp1543727556-17) [   x:Wakuwaku] o.a.s.u.p.LogUpdateProcessorFactory [Wakuwaku]  webapp=/solr path=/update params={}{add=[VA902B (1569599422110629888)]} 0 3
+2017-06-08 01:50:55.924 INFO  (qtp1543727556-22) [   x:Wakuwaku] o.a.s.u.p.LogUpdateProcessorFactory [Wakuwaku]  webapp=/solr path=/update params={}{add=[0579B002 (1569599422120067072)]} 0 4
+2017-06-08 01:50:55.933 INFO  (qtp1543727556-18) [   x:Wakuwaku] o.a.s.u.p.LogUpdateProcessorFactory [Wakuwaku]  webapp=/solr path=/update params={}{add=[9885A004 (1569599422128455680)]} 0 4
+2017-06-08 01:50:55.942 INFO  (qtp1543727556-20) [   x:Wakuwaku] o.a.s.u.p.LogUpdateProcessorFactory [Wakuwaku]  webapp=/solr path=/update params={}{add=[SOLR1000 (1569599422137892864)]} 0 4
+2017-06-08 01:50:55.986 INFO  (qtp1543727556-13) [   x:Wakuwaku] o.a.s.u.p.LogUpdateProcessorFactory [Wakuwaku]  webapp=/solr path=/update params={}{add=[UTF8TEST (1569599422163058688)]} 0 24
+2017-06-08 01:50:56.013 INFO  (qtp1543727556-16) [   x:Wakuwaku] o.a.s.u.p.LogUpdateProcessorFactory [Wakuwaku]  webapp=/solr path=/update params={}{add=[EN7800GTX/2DHTV/256M (1569599422191370240), 100-435805 (1569599422213390336)]} 0 25
+2017-06-08 01:50:56.017 INFO  (qtp1543727556-15) [   x:Wakuwaku] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2017-06-08 01:50:56.017 INFO  (qtp1543727556-15) [   x:Wakuwaku] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@66621127
+2017-06-08 01:50:56.620 INFO  (qtp1543727556-15) [   x:Wakuwaku] o.a.s.s.SolrIndexSearcher Opening [Searcher@74b0420[Wakuwaku] main]
+2017-06-08 01:50:56.623 INFO  (qtp1543727556-15) [   x:Wakuwaku] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2017-06-08 01:50:56.623 INFO  (searcherExecutor-7-thread-1-processing-x:Wakuwaku) [   x:Wakuwaku] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@74b0420[Wakuwaku] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(6.5.1):C52/32:delGen=1) Uninverting(_2(6.5.1):C32)))}
+2017-06-08 01:50:56.623 INFO  (searcherExecutor-7-thread-1-processing-x:Wakuwaku) [   x:Wakuwaku] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-06-08 01:50:56.626 INFO  (searcherExecutor-7-thread-1-processing-x:Wakuwaku) [   x:Wakuwaku] o.a.s.c.SolrCore [Wakuwaku] Registered new searcher Searcher@74b0420[Wakuwaku] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(6.5.1):C52/32:delGen=1) Uninverting(_2(6.5.1):C32)))}
+2017-06-08 01:50:56.627 INFO  (qtp1543727556-15) [   x:Wakuwaku] o.a.s.u.p.LogUpdateProcessorFactory [Wakuwaku]  webapp=/solr path=/update params={commit=true}{commit=} 0 610
+2017-06-08 01:52:49.382 INFO  (qtp1543727556-18) [   x:Wakuwaku] o.a.s.u.p.LogUpdateProcessorFactory [Wakuwaku]  webapp=/solr path=/update params={}{} 0 3
+2017-06-08 01:52:49.406 ERROR (qtp1543727556-18) [   x:Wakuwaku] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Unexpected character 'i' (code 105) in prolog; expected '<'
+ at [row,col {unknown-source}]: [1,1]
+	at org.apache.solr.handler.loader.XMLLoader.load(XMLLoader.java:181)
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:97)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:68)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:173)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2440)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:723)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:529)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:347)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:298)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.ctc.wstx.exc.WstxUnexpectedCharException: Unexpected character 'i' (code 105) in prolog; expected '<'
+ at [row,col {unknown-source}]: [1,1]
+	at com.ctc.wstx.sr.StreamScanner.throwUnexpectedChar(StreamScanner.java:647)
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromProlog(BasicStreamReader.java:2054)
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1131)
+	at org.apache.solr.handler.loader.XMLLoader.processUpdate(XMLLoader.java:218)
+	at org.apache.solr.handler.loader.XMLLoader.load(XMLLoader.java:179)
+	... 35 more
+
+2017-06-08 01:52:49.426 INFO  (qtp1543727556-20) [   x:Wakuwaku] o.a.s.u.p.LogUpdateProcessorFactory [Wakuwaku]  webapp=/solr path=/update params={}{} 0 0
+2017-06-08 01:52:49.427 ERROR (qtp1543727556-20) [   x:Wakuwaku] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Unexpected character '[' (code 91) in prolog; expected '<'
+ at [row,col {unknown-source}]: [1,1]
+	at org.apache.solr.handler.loader.XMLLoader.load(XMLLoader.java:181)
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:97)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:68)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:173)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2440)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:723)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:529)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:347)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:298)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.ctc.wstx.exc.WstxUnexpectedCharException: Unexpected character '[' (code 91) in prolog; expected '<'
+ at [row,col {unknown-source}]: [1,1]
+	at com.ctc.wstx.sr.StreamScanner.throwUnexpectedChar(StreamScanner.java:647)
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromProlog(BasicStreamReader.java:2054)
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1131)
+	at org.apache.solr.handler.loader.XMLLoader.processUpdate(XMLLoader.java:218)
+	at org.apache.solr.handler.loader.XMLLoader.load(XMLLoader.java:179)
+	... 35 more
+
+2017-06-08 01:52:49.442 INFO  (qtp1543727556-13) [   x:Wakuwaku] o.a.s.u.p.LogUpdateProcessorFactory [Wakuwaku]  webapp=/solr path=/update params={}{add=[GB18030TEST (1569599541150220288)]} 0 5
+2017-06-08 01:52:49.455 INFO  (qtp1543727556-16) [   x:Wakuwaku] o.a.s.u.p.LogUpdateProcessorFactory [Wakuwaku]  webapp=/solr path=/update params={}{add=[SP2514N (1569599541161754624), 6H500F0 (1569599541165948928)]} 0 8
+2017-06-08 01:52:49.468 INFO  (qtp1543727556-15) [   x:Wakuwaku] o.a.s.u.p.LogUpdateProcessorFactory [Wakuwaku]  webapp=/solr path=/update params={}{add=[F8V7067-APL-KIT (1569599541176434688), IW-02 (1569599541179580416)]} 0 7
+2017-06-08 01:52:49.476 INFO  (qtp1543727556-19) [   x:Wakuwaku] o.a.s.u.p.LogUpdateProcessorFactory [Wakuwaku]  webapp=/solr path=/update params={}{add=[MA147LL/A (1569599541187969024)]} 0 4
+2017-06-08 01:52:49.492 INFO  (qtp1543727556-17) [   x:Wakuwaku] o.a.s.u.p.LogUpdateProcessorFactory [Wakuwaku]  webapp=/solr path=/update params={}{add=[adata (1569599541197406208), apple (1569599541198454784), asus (1569599541199503360), ati (1569599541199503361), belkin (1569599541200551936), canon (1569599541201600512), corsair (1569599541202649088), dell (1569599541203697664), maxtor (1569599541204746240), samsung (1569599541204746241), ... (11 adds)]} 0 10
+2017-06-08 01:52:49.522 INFO  (qtp1543727556-21) [   x:Wakuwaku] o.a.s.u.p.LogUpdateProcessorFactory [Wakuwaku]  webapp=/solr path=/update params={}{add=[TWINX2048-3200PRO (1569599541213134848), VS1GB400C3 (1569599541215232000), VDBDB1A16 (1569599541218377728)]} 0 26
+2017-06-08 01:52:49.533 INFO  (qtp1543727556-18) [   x:Wakuwaku] o.a.s.u.p.LogUpdateProcessorFactory [Wakuwaku]  webapp=/solr path=/update params={}{add=[USD (1569599541244592128), EUR (1569599541246689280), GBP (1569599541247737856), NOK (1569599541248786432)]} 0 6
+2017-06-08 01:52:49.541 INFO  (qtp1543727556-20) [   x:Wakuwaku] o.a.s.u.p.LogUpdateProcessorFactory [Wakuwaku]  webapp=/solr path=/update params={}{add=[3007WFP (1569599541256126464)]} 0 3
+2017-06-08 01:52:49.549 INFO  (qtp1543727556-13) [   x:Wakuwaku] o.a.s.u.p.LogUpdateProcessorFactory [Wakuwaku]  webapp=/solr path=/update params={}{add=[VA902B (1569599541264515072)]} 0 3
+2017-06-08 01:52:49.555 INFO  (qtp1543727556-16) [   x:Wakuwaku] o.a.s.u.p.LogUpdateProcessorFactory [Wakuwaku]  webapp=/solr path=/update params={}{} 0 0
+2017-06-08 01:52:49.556 ERROR (qtp1543727556-16) [   x:Wakuwaku] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Unexpected character '{' (code 123) in prolog; expected '<'
+ at [row,col {unknown-source}]: [1,1]
+	at org.apache.solr.handler.loader.XMLLoader.load(XMLLoader.java:181)
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:97)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:68)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:173)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2440)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:723)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:529)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:347)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:298)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.ctc.wstx.exc.WstxUnexpectedCharException: Unexpected character '{' (code 123) in prolog; expected '<'
+ at [row,col {unknown-source}]: [1,1]
+	at com.ctc.wstx.sr.StreamScanner.throwUnexpectedChar(StreamScanner.java:647)
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromProlog(BasicStreamReader.java:2054)
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1131)
+	at org.apache.solr.handler.loader.XMLLoader.processUpdate(XMLLoader.java:218)
+	at org.apache.solr.handler.loader.XMLLoader.load(XMLLoader.java:179)
+	... 35 more
+
+2017-06-08 01:52:49.569 INFO  (qtp1543727556-15) [   x:Wakuwaku] o.a.s.u.p.LogUpdateProcessorFactory [Wakuwaku]  webapp=/solr path=/update params={}{add=[0579B002 (1569599541285486592)]} 0 3
+2017-06-08 01:52:49.574 INFO  (qtp1543727556-19) [   x:Wakuwaku] o.a.s.u.p.LogUpdateProcessorFactory [Wakuwaku]  webapp=/solr path=/update params={}{} 0 1
+2017-06-08 01:52:49.575 ERROR (qtp1543727556-19) [   x:Wakuwaku] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Invalid UTF-8 start byte 0xf8 (at char #11, byte #-1)
+	at org.apache.solr.handler.loader.XMLLoader.load(XMLLoader.java:181)
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:97)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:68)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:173)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2440)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:723)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:529)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:347)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:298)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.ctc.wstx.exc.WstxIOException: Invalid UTF-8 start byte 0xf8 (at char #11, byte #-1)
+	at com.ctc.wstx.sr.StreamScanner.constructFromIOE(StreamScanner.java:633)
+	at com.ctc.wstx.sr.StreamScanner.loadMore(StreamScanner.java:1007)
+	at com.ctc.wstx.sr.StreamScanner.getNext(StreamScanner.java:762)
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromProlog(BasicStreamReader.java:2002)
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1131)
+	at org.apache.solr.handler.loader.XMLLoader.processUpdate(XMLLoader.java:218)
+	at org.apache.solr.handler.loader.XMLLoader.load(XMLLoader.java:179)
+	... 35 more
+Caused by: java.io.CharConversionException: Invalid UTF-8 start byte 0xf8 (at char #11, byte #-1)
+	at com.ctc.wstx.io.UTF8Reader.reportInvalidInitial(UTF8Reader.java:303)
+	at com.ctc.wstx.io.UTF8Reader.read(UTF8Reader.java:189)
+	at com.ctc.wstx.io.ReaderSource.readInto(ReaderSource.java:86)
+	at com.ctc.wstx.io.BranchingReaderSource.readInto(BranchingReaderSource.java:56)
+	at com.ctc.wstx.sr.StreamScanner.loadMore(StreamScanner.java:1001)
+	... 40 more
+
+2017-06-08 01:52:49.610 INFO  (qtp1543727556-17) [   x:Wakuwaku] o.a.s.u.p.LogUpdateProcessorFactory [Wakuwaku]  webapp=/solr path=/update params={}{} 0 0
+2017-06-08 01:52:49.619 INFO  (qtp1543727556-21) [   x:Wakuwaku] o.a.s.u.p.LogUpdateProcessorFactory [Wakuwaku]  webapp=/solr path=/update params={}{add=[9885A004 (1569599541337915392)]} 0 3
+2017-06-08 01:52:49.650 INFO  (qtp1543727556-18) [   x:Wakuwaku] o.a.s.u.p.LogUpdateProcessorFactory [Wakuwaku]  webapp=/solr path=/update params={}{} 0 0
+2017-06-08 01:52:49.651 ERROR (qtp1543727556-18) [   x:Wakuwaku] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Invalid UTF-8 middle byte 0xe5 (at char #10, byte #-1)
+	at org.apache.solr.handler.loader.XMLLoader.load(XMLLoader.java:181)
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:97)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:68)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:173)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2440)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:723)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:529)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:347)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:298)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.ctc.wstx.exc.WstxIOException: Invalid UTF-8 middle byte 0xe5 (at char #10, byte #-1)
+	at com.ctc.wstx.sr.StreamScanner.constructFromIOE(StreamScanner.java:633)
+	at com.ctc.wstx.sr.StreamScanner.loadMore(StreamScanner.java:1007)
+	at com.ctc.wstx.sr.StreamScanner.getNext(StreamScanner.java:762)
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromProlog(BasicStreamReader.java:2002)
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1131)
+	at org.apache.solr.handler.loader.XMLLoader.processUpdate(XMLLoader.java:218)
+	at org.apache.solr.handler.loader.XMLLoader.load(XMLLoader.java:179)
+	... 35 more
+Caused by: java.io.CharConversionException: Invalid UTF-8 middle byte 0xe5 (at char #10, byte #-1)
+	at com.ctc.wstx.io.UTF8Reader.reportInvalidOther(UTF8Reader.java:314)
+	at com.ctc.wstx.io.UTF8Reader.read(UTF8Reader.java:205)
+	at com.ctc.wstx.io.ReaderSource.readInto(ReaderSource.java:86)
+	at com.ctc.wstx.io.BranchingReaderSource.readInto(BranchingReaderSource.java:56)
+	at com.ctc.wstx.sr.StreamScanner.loadMore(StreamScanner.java:1001)
+	... 40 more
+
+2017-06-08 01:52:49.669 INFO  (qtp1543727556-20) [   x:Wakuwaku] o.a.s.u.p.LogUpdateProcessorFactory [Wakuwaku]  webapp=/solr path=/update params={}{add=[SOLR1000 (1569599541389295616)]} 0 4
+2017-06-08 01:52:49.687 INFO  (qtp1543727556-13) [   x:Wakuwaku] o.a.s.u.p.LogUpdateProcessorFactory [Wakuwaku]  webapp=/solr path=/update params={}{} 0 1
+2017-06-08 01:52:49.688 ERROR (qtp1543727556-13) [   x:Wakuwaku] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Unexpected character '#' (code 35) in prolog; expected '<'
+ at [row,col {unknown-source}]: [1,1]
+	at org.apache.solr.handler.loader.XMLLoader.load(XMLLoader.java:181)
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:97)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:68)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:173)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2440)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:723)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:529)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:347)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:298)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.ctc.wstx.exc.WstxUnexpectedCharException: Unexpected character '#' (code 35) in prolog; expected '<'
+ at [row,col {unknown-source}]: [1,1]
+	at com.ctc.wstx.sr.StreamScanner.throwUnexpectedChar(StreamScanner.java:647)
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromProlog(BasicStreamReader.java:2054)
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1131)
+	at org.apache.solr.handler.loader.XMLLoader.processUpdate(XMLLoader.java:218)
+	at org.apache.solr.handler.loader.XMLLoader.load(XMLLoader.java:179)
+	... 35 more
+
+2017-06-08 01:52:49.716 INFO  (qtp1543727556-16) [   x:Wakuwaku] o.a.s.u.p.LogUpdateProcessorFactory [Wakuwaku]  webapp=/solr path=/update params={}{add=[UTF8TEST (1569599541439627264)]} 0 5
+2017-06-08 01:52:49.728 INFO  (qtp1543727556-15) [   x:Wakuwaku] o.a.s.u.p.LogUpdateProcessorFactory [Wakuwaku]  webapp=/solr path=/update params={}{add=[EN7800GTX/2DHTV/256M (1569599541449064448), 100-435805 (1569599541452210176)]} 0 7
+2017-06-08 01:52:49.733 INFO  (qtp1543727556-19) [   x:Wakuwaku] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2017-06-08 01:52:49.734 INFO  (qtp1543727556-19) [   x:Wakuwaku] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@66621127
+2017-06-08 01:52:50.227 INFO  (qtp1543727556-19) [   x:Wakuwaku] o.a.s.s.SolrIndexSearcher Opening [Searcher@198a9a3[Wakuwaku] main]
+2017-06-08 01:52:50.228 INFO  (qtp1543727556-19) [   x:Wakuwaku] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2017-06-08 01:52:50.230 INFO  (searcherExecutor-7-thread-1-processing-x:Wakuwaku) [   x:Wakuwaku] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@198a9a3[Wakuwaku] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(6.5.1):C52/32:delGen=1) Uninverting(_3(6.5.1):C32)))}
+2017-06-08 01:52:50.230 INFO  (searcherExecutor-7-thread-1-processing-x:Wakuwaku) [   x:Wakuwaku] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-06-08 01:52:50.233 INFO  (searcherExecutor-7-thread-1-processing-x:Wakuwaku) [   x:Wakuwaku] o.a.s.c.SolrCore [Wakuwaku] Registered new searcher Searcher@198a9a3[Wakuwaku] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(6.5.1):C52/32:delGen=1) Uninverting(_3(6.5.1):C32)))}
+2017-06-08 01:52:50.240 INFO  (qtp1543727556-19) [   x:Wakuwaku] o.a.s.u.p.LogUpdateProcessorFactory [Wakuwaku]  webapp=/solr path=/update params={commit=true}{commit=} 0 508
+2017-06-08 01:53:15.289 INFO  (qtp1543727556-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1496886794089} status=0 QTime=0
+2017-06-08 01:53:15.297 INFO  (qtp1543727556-38) [   x:Wakuwaku] o.a.s.c.S.Request [Wakuwaku]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1496886795149} status=0 QTime=0
+2017-06-08 01:53:15.302 INFO  (qtp1543727556-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1496886794090} status=0 QTime=9
+2017-06-08 01:53:15.305 INFO  (qtp1543727556-16) [   x:Wakuwaku] o.a.s.c.S.Request [Wakuwaku]  webapp=/solr path=/replication params={wt=json&command=details&_=1496886795150} status=0 QTime=3
+2017-06-08 01:53:15.313 INFO  (qtp1543727556-19) [   x:Wakuwaku] o.a.s.c.S.Request [Wakuwaku]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1496886794090&ts=1496886794090} status=503 QTime=0
+2017-06-08 01:53:15.316 INFO  (qtp1543727556-36) [   x:Wakuwaku] o.a.s.c.S.Request [Wakuwaku]  webapp=/solr path=/admin/system params={wt=json&_=1496886795150} status=0 QTime=8
