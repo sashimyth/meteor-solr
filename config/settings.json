@@ -11,18 +11,7 @@
         "nama",
         "address",
         "birthday",
-        "email",
-        "title",
-        "summary",
-        "date_ss",
-        "lastmodified",
-        "returnUrl",
-        "author",
-        "doctype",
-        "source",
-        "ml_entity_location",
-        "ml_entity_organization",
-        "ml_keyword"
+        "email"
       ],
       "flatFacets": {
         "doctype": {

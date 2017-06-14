@@ -206,7 +206,7 @@ const SearchBar = React.createClass({
     return (
       <div className="search-bar clearfix">
         <form
-          className="navbar-form navbar-left pull-right"
+          className="navbar-form"
           role="search"
           onSubmit={this.handleSubmit}
         >

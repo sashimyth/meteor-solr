@@ -8,7 +8,7 @@ const SearchQuery = {
     if (((modifiedKeywords.match(/"/g) || []).length % 2) !== 0) {
       modifiedKeywords = modifiedKeywords.replace(/"/g, '');
     }
-    const query = initQuery.q(modifiedKeywords);
+    const query = initQuery.q(modifiedKeywords+"*");
 
     // Default to AND'ing keywords together
     query.qop('AND');
