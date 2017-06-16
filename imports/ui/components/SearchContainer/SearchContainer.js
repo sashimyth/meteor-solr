@@ -232,13 +232,25 @@ const SearchContainer = React.createClass({
     return (
       <div className="search-container">
         <header>
-          <nav className="navbar navbar-default navbar-fixed-top">
+          <div className="navbar navbar-inverse set-radius-zero">
+
+          </div>
+          <nav className="navbar navbar-default navbar-fixed-top blue-top">
             <div className="container">
               <div className="row">
-                <div className="col-md-2">
+                <div className="col-md-12">
                   <SearchLogo />
+                    {/*<div className="form-inline my-2 my-lg-2">*/}
+                        {/*<button className="btn btn-info">Login</button>*/}
+                        {/*<a href="#" className="btn-default"><i className="fa fa-language"/>Indonesia</a>*/}
+                    {/*</div>*/}
                 </div>
-                <div className="col-md-10">
+              </div>
+              <div className="row">
+                <div className="col-md-2">
+
+                </div>
+                <div className="col-md-8">
                   <SearchBar
                     searchParams={this.state.searchParams}
                     handleSearchParamsUpdate={this.updateSearchParams}
@@ -246,6 +258,7 @@ const SearchContainer = React.createClass({
                     requestSuggestions={this.provideSuggestions}
                   />
                 </div>
+                <div className="col-md-2"></div>
               </div>
             </div>
           </nav>
