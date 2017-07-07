@@ -149,7 +149,7 @@ const SearchContainer = React.createClass({
     } else {
       mainContent = (
         <main>
-          Oh no! Looks like we're having problems completing your search!
+          Oh no! Looks like were having problems completing your search!
         </main>
       );
     }
@@ -232,9 +232,7 @@ const SearchContainer = React.createClass({
     return (
       <div className="search-container">
         <header>
-          <div className="navbar navbar-inverse set-radius-zero">
-
-          </div>
+        <br />
           <nav className="navbar navbar-default navbar-fixed-top blue-top">
             <div className="container">
               <div className="row">

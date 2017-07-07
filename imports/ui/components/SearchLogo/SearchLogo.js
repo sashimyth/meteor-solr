@@ -6,7 +6,7 @@ const SearchLogo = () => (
         <div>
             <img className="img-responsive" src="/images/logo.png" alt="UGM Fisipol DigiLib" />
         </div>
-        <span>
+        <span className="title-top">
             <i className="fa fa-book" /> Digital Library
             <br/>Fakultas Ilmu Sosial dan Politik
             <br/> Universitas Gadjah Mada

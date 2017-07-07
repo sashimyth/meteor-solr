@@ -11,7 +11,8 @@
         "nama",
         "address",
         "birthday",
-        "email"
+        "email",
+        "pdf"
       ],
       "flatFacets": {
         "doctype": {

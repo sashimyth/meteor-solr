@@ -44,8 +44,10 @@ const SearchResult = React.createClass({
 
   render() {
     const nama = this.cleanSpaces(this.props.result.nama);
-    const title = this.cleanSpaces(this.props.result.title);
+    // const title = this.cleanSpaces(this.props.result.title);
+    const pdf = this.cleanSpaces(this.props.result.pdf);
     const resultUrl = encodeURI(this.props.result.returnUrl);
+    const pdfUrl = encodeURI(this.props.result.pdf);
     return (
       <li className="search-result">
         <div className="search-result-title">
@@ -53,18 +55,24 @@ const SearchResult = React.createClass({
             href={resultUrl}
             target="_blank"
             rel="noopener noreferrer"
+            className={this.props.result.nama}
             onClick={this.logSearchResult}
-            className={this.props.result.email}
           >
             {nama}
           </a>
         </div>
         <div className="search-result-description">
           <span dangerouslySetInnerHTML={this.renderContent()} />
+
         </div>
         <div className="search-metadata">
           {SearchFacetUtils.getCustomValue('email', this.props.result.email)}
-          &nbsp;| {DateFormatter.format(this.props.result.lastmodified)}
+          &nbsp;| {DateFormatter.format(this.props.result.lastmodified)} | <a
+            href={pdf}
+            target="_blank"
+        >
+            Lihat file {pdf}
+        </a>
         </div>
       </li>
     );
