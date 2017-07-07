@@ -7,19 +7,23 @@
       "core": "testcore",
       "suggesterUrl": "/suggesthandler2",
       "limitFields": [
-        "id",
-        "nama",
-        "address",
-        "birthday",
-        "email",
-        "pdf"
+        "id_pustaka",
+        "bahasa",
+        "isbn",
+        "klasifikasi",
+        "judul",
+        "pengarang",
+        "penerbit",
+        "th_terbit",
+        "subyek",
+        "file2"
       ],
       "flatFacets": {
         "doctype": {
           "limit": 10,
           "sort": "count"
         },
-        "author": {
+        "pengarang": {
           "limit": 10,
           "sort": "count"
         },
@@ -41,7 +45,7 @@
           "limit": 100,
           "sort": "index"
         },
-        "date_ss": {
+        "th_terbit": {
           "limit": 100,
           "sort": "index"
         }

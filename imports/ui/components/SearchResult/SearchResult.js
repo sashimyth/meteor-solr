@@ -43,11 +43,11 @@ const SearchResult = React.createClass({
   },
 
   render() {
-    const nama = this.cleanSpaces(this.props.result.nama);
+    const nama = this.cleanSpaces(this.props.result.judul);
     // const title = this.cleanSpaces(this.props.result.title);
-    const pdf = this.cleanSpaces(this.props.result.pdf);
+    const pdf = this.cleanSpaces(this.props.result.file2);
     const resultUrl = encodeURI(this.props.result.returnUrl);
-    const pdfUrl = encodeURI(this.props.result.pdf);
+    const pdfUrl = encodeURI(this.props.result.file2);
     return (
       <li className="search-result">
         <div className="search-result-title">
@@ -55,7 +55,7 @@ const SearchResult = React.createClass({
             href={resultUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className={this.props.result.nama}
+            className={this.props.result.judul}
             onClick={this.logSearchResult}
           >
             {nama}
@@ -66,7 +66,7 @@ const SearchResult = React.createClass({
 
         </div>
         <div className="search-metadata">
-          {SearchFacetUtils.getCustomValue('email', this.props.result.email)}
+          {SearchFacetUtils.getCustomValue('pengarang', this.props.result.pengarang)}
           &nbsp;| {DateFormatter.format(this.props.result.lastmodified)} | <a
             href={pdf}
             target="_blank"

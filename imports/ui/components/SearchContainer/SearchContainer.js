@@ -207,10 +207,10 @@ const SearchContainer = React.createClass({
             handleSearchParamsUpdate={this.updateSearchParams}
           />
           <SearchFacet
-            key="author"
-            name="Author"
-            field="author"
-            values={this.data.searchMetadata.facets.author}
+            key="pengarang"
+            name="pengarang"
+            field="pengarang"
+            values={this.data.searchMetadata.facets.pengarang}
             searchParams={this.state.searchParams}
             handleSearchParamsUpdate={this.updateSearchParams}
           />
