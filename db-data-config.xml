@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataConfig>
+  <dataSource type="JdbcDataSource" driver="com.mysql.jdbc.Driver" 
+    url="jdbc:mysql://localhost:3306/pusfispol" user="root" password="" batchSize="1" />
+  <document name="books">
+    <entity name="book" query="SELECT * FROM digital">
+       <field column="id_pustaka" name="id_pustaka" />
+       <field column="bahasa" name="bahasa" />
+       <field column="isbn" name="isbn" />
+       <field column="klasifikasi" name="klasifikasi" />
+       <field column="judul" name="judul" />
+       <field column="pengarang" name="pengarang" />
+       <field column="penerbit" name="penerbit" />
+       <field column="th_terbit" name="th_terbit" />
+       <field column="subyek" name="subyek" />
+       <field column="file2" name="file2" />
+    </entity>
+  </document>
+</dataConfig>
