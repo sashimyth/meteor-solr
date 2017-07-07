@@ -4,7 +4,7 @@
     url="jdbc:mysql://localhost:3306/pusfispol" user="root" password="" batchSize="1" />
   <document name="books">
     <entity name="book" query="SELECT * FROM digital">
-       <field column="id_pustaka" name="id_pustaka" />
+       <field column="id_pustaka" name="id" />
        <field column="bahasa" name="bahasa" />
        <field column="isbn" name="isbn" />
        <field column="klasifikasi" name="klasifikasi" />

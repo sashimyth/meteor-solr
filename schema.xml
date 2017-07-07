@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <schema name="example-data-driven-schema" version="1.6">
-  <uniqueKey>id_pustaka</uniqueKey>
+  <uniqueKey>id</uniqueKey>
   <fieldType name="ancestor_path" class="solr.TextField">
     <analyzer type="index">
       <tokenizer class="solr.KeywordTokenizerFactory"/>
@@ -405,7 +405,7 @@
   <field name="_text_" type="text_general" multiValued="true" indexed="true" stored="false"/>
   <field name="_version_" type="long" indexed="true" stored="true"/>
 
-  <field name="id_pustaka" type="string" indexed="true" stored="true" multiValued="false"/>
+  <field name="id" type="string" indexed="true" stored="true" multiValued="false"/>
   <field name="bahasa" type="string" indexed="true" stored="true" multiValued="false"/>
   <field name="isbn" type="string" indexed="true" stored="true" multiValued="false"/>
   <field name="klasifikasi" type="string" indexed="true" stored="true" multiValued="false"/>

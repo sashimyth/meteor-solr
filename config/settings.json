@@ -7,7 +7,7 @@
       "core": "testcore",
       "suggesterUrl": "/suggesthandler2",
       "limitFields": [
-        "id_pustaka",
+        "id",
         "bahasa",
         "isbn",
         "klasifikasi",

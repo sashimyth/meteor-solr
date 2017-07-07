@@ -46,7 +46,7 @@ const SearchResult = React.createClass({
     const nama = this.cleanSpaces(this.props.result.judul);
     // const title = this.cleanSpaces(this.props.result.title);
     const pdf = this.cleanSpaces(this.props.result.file2);
-    const resultUrl = encodeURI(this.props.result.returnUrl);
+    const resultUrl = encodeURI(this.props.result.judul);
     const pdfUrl = encodeURI(this.props.result.file2);
     return (
       <li className="search-result">
