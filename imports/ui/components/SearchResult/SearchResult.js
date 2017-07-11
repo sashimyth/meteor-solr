@@ -52,8 +52,6 @@ const SearchResult = React.createClass({
       <li className="search-result">
         <div className="search-result-title">
           <a
-            href={resultUrl}
-            target="_blank"
             rel="noopener noreferrer"
             className={this.props.result.judul}
             onClick={this.logSearchResult}
