@@ -22,6 +22,10 @@ const SearchResult = React.createClass({
     );
   },
 
+  contentResult(){
+    alert("content here");
+  },
+
   /**
    * Something is causing certain content blocks to have their whitespace
    * converted to &nbsp;'s. This likely has to do with the encoding of some
@@ -55,7 +59,7 @@ const SearchResult = React.createClass({
             href={resultUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className={this.props.result.judul}
+            className={this.props.result.subyek}
             onClick={this.logSearchResult}
           >
             {nama}

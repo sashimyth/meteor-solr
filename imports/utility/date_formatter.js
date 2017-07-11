@@ -2,7 +2,7 @@ import moment from 'moment';
 
 const DateFormatter = {
   format(date) {
-    return moment(date).format('YYYY-MM-DD');
+    return moment(date).format('DD-MM-YYYY');
   },
 };
 
