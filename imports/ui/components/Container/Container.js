@@ -10,7 +10,7 @@ import WelcomeContent from '../WelcomeContent/WelcomeContent';
 import WelcomeSidebar from '../WelcomeSidebar/WelcomeSidebar';
 import ResultsCount from '../ResultsCount/ResultsCount';
 import Sorting from '../Sorting/Sorting';
-import SearchResults from '../SearchResults/SearchResults';
+import SearchResults from '../SearchResultsContent/SearchResultsContent';
 import Pagination from '../Pagination/Pagination';
 import NestedCategoriesWidget from '../NestedCategoriesWidget/NestedCategoriesWidget';
 import SearchFacet from '../SearchFacet/SearchFacet';
@@ -149,7 +149,7 @@ const Container = React.createClass({
                 />
               </div>
             </div>
-            <SearchResults
+            <SearchResult
               searchResults={this.data.searchResults}
               searchParams={this.state.searchParams}
               searchMetadata={this.data.searchMetadata}

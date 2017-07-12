@@ -5,6 +5,10 @@
   <document name="books">
     <entity name="book" query="SELECT * FROM digital">
        <field column="id_pustaka" name="id" />
+       <field column="kota_terbit" name="kota_terbit" />
+       <field column="kontributor" name="kontributor" />
+       <field column="jml_hlm" name="jml_hlm" />
+       <field column="edisi" name="edisi" />
        <field column="bahasa" name="bahasa" />
        <field column="isbn" name="isbn" />
        <field column="klasifikasi" name="klasifikasi" />

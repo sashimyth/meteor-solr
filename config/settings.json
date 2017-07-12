@@ -9,7 +9,12 @@
       "limitFields": [
         "id",
         "bahasa",
-        "isbn",
+		"kota_terbit",
+		"id_isbn",
+		"kontributor",
+		"edisi",
+		"jml_hlm",
+		"bibliografi",
         "klasifikasi",
         "judul",
         "pengarang",

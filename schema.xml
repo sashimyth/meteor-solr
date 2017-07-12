@@ -411,6 +411,10 @@
   <field name="klasifikasi" type="string" indexed="true" stored="true" multiValued="false"/>
   <field name="judul" type="string" indexed="true" stored="true" multiValued="false"/>
   <field name="pengarang" type="string" multiValued="false" indexed="true" required="false" stored="true"/>
+  <field name="kota_terbit" type="string" multiValued="false" indexed="true" required="false" stored="true"/>
+  <field name="kontributor" type="string" multiValued="false" indexed="true" required="false" stored="true"/>
+  <field name="jml_hlm" type="string" multiValued="false" indexed="true" required="false" stored="true"/>
+  <field name="edisi" type="string" multiValued="false" indexed="true" required="false" stored="true"/>
   <field name="penerbit" type="string" multiValued="false" indexed="true" required="false" stored="true"/>
   <field name="th_terbit" type="string" multiValued="false" indexed="true" required="false" stored="true"/>
   <field name="subyek" type="string" multiValued="false" indexed="true" required="false" stored="true"/>

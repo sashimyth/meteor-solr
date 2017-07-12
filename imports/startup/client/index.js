@@ -11,5 +11,5 @@ render((
   <Router history={browserHistory}>
     <Route path="/" component={Search} />
     <Route path="/:judul" component={Content} />
-  </Router>
+     </Router>
 ), document.getElementById('app'));
