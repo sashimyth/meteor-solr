@@ -79,6 +79,7 @@ const SearchBar = React.createClass({
       keywords: '',
       selectedSuggestionIndex: -1,
     });
+    this.props.changeContentState(false);
   },
 
   handleSubmit(event) {

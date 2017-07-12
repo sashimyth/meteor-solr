@@ -36,6 +36,15 @@ const SearchResult = React.createClass({
     return cleanContent;
   },
 
+  bringContent(){
+    this.props.changeContentState(true);
+    const newContentData = _.extend({}, this.props.contentData);
+    newContentData.judul = this.props.result.judul;
+    newContentData.pengarang = this.props.result.pengarang;
+    newContentData.file = this.props.result.file2;
+    this.props.changeContentData(newContentData);
+  },
+
   renderContent() {
     return {
       __html: this.cleanSpaces(this.props.result.address),
@@ -55,6 +64,7 @@ const SearchResult = React.createClass({
             rel="noopener noreferrer"
             className={this.props.result.judul}
             onClick={this.logSearchResult}
+            onClick={this.bringContent}
           >
             {nama}
           </a>

@@ -23,6 +23,9 @@ const SearchResults = React.createClass({
   renderSearchResults() {
     return this.props.searchResults.map((searchResult) => (
       <SearchResult
+        contentData={this.props.contentData}
+        changeContentState={this.props.changeContentState}
+        changeContentData={this.props.changeContentData}
         key={searchResult._id}
         result={searchResult}
         currentPage={this.props.searchParams.currentPage}

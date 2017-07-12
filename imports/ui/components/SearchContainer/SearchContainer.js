@@ -17,6 +17,7 @@ import SearchFacet from '../SearchFacet/SearchFacet';
 import SearchLogo from '../SearchLogo/SearchLogo';
 import SearchBar from '../SearchBar/SearchBar';
 import Footer from '../Footer/Footer';
+import ResultDetail from '../ResultDetail/ResultDetail';
 
 const SearchContainer = React.createClass({
 
@@ -24,6 +25,8 @@ const SearchContainer = React.createClass({
 
   getInitialState() {
     return {
+      contentChanged : false,
+      contentData : this.contentData(),
       searchParams: this.defaultSearchParams(),
       searchSuggestions: [],
     };
@@ -69,6 +72,34 @@ const SearchContainer = React.createClass({
     };
   },
 
+  showContent(){
+    if (!this.state.contentChanged) {
+      return ("false");
+    }else{
+      return ("true");
+    };
+  },
+
+  changeContentState(newContentChange){
+    this.setState({
+      contentChanged : newContentChange
+    });
+  },
+
+  contentData(){
+    return {
+      judul : 'a',
+      pengarang : 'a',
+      file : 'a',
+    }
+  },
+
+  changeContentData(newContent){
+    this.setState({
+      contentData : newContent,
+    });
+  },
+
   updateSearchParams(newSearchParams) {
     if (newSearchParams) {
       this.setState({
@@ -108,7 +139,15 @@ const SearchContainer = React.createClass({
         </main>
       );
     } else if (PowerSearch.getStatus().loaded) {
-      if (this.data.searchResults.length) {
+      if (this.state.contentChanged) {
+        mainContent = (
+            <main>
+              <ResultDetail
+                contentData={this.state.contentData} 
+              />
+            </main>
+          );
+      } else if (this.data.searchResults.length) {
         mainContent = (
           <main>
             <div className="row">
@@ -126,6 +165,9 @@ const SearchContainer = React.createClass({
               </div>
             </div>
             <SearchResults
+              contentData={this.state.contentData}
+              changeContentState={this.changeContentState}
+              changeContentData={this.changeContentData}
               searchResults={this.data.searchResults}
               searchParams={this.state.searchParams}
               searchMetadata={this.data.searchMetadata}
@@ -232,7 +274,6 @@ const SearchContainer = React.createClass({
     return (
       <div className="search-container">
         <header>
-        <br />
           <nav className="navbar navbar-default navbar-fixed-top blue-top">
             <div className="container">
               <div className="row">
@@ -250,6 +291,7 @@ const SearchContainer = React.createClass({
                 </div>
                 <div className="col-md-8">
                   <SearchBar
+                    changeContentState={this.changeContentState}
                     searchParams={this.state.searchParams}
                     handleSearchParamsUpdate={this.updateSearchParams}
                     searchSuggestions={this.state.searchSuggestions}
