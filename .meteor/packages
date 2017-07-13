@@ -34,3 +34,4 @@ shell-server@0.2.1
 static-html
 react-meteor-data
 okgrow:analytics
+pascoual:pdfjs

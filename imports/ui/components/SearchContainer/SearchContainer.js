@@ -274,7 +274,7 @@ const SearchContainer = React.createClass({
     return (
       <div className="search-container">
         <header>
-          <nav className="navbar navbar-default navbar-fixed-top blue-top">
+          <nav className="navbar navbar-default blue-top">
             <div className="container">
               <div className="row">
                 <div className="col-md-12">
