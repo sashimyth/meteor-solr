@@ -88,9 +88,9 @@ const SearchContainer = React.createClass({
 
   contentData(){
     return {
-      judul : 'a',
-      pengarang : 'a',
-      file : 'a',
+      judul : 'kosong',
+      pengarang : 'kosong',
+      file : 'kosong',
     }
   },
 
@@ -202,6 +202,12 @@ const SearchContainer = React.createClass({
     let sidebarContent;
     if (!this.state.searchParams.keywords) {
       sidebarContent = (<WelcomeSidebar />);
+    } else if (PowerSearch.getStatus().loading) {
+      sidebarContent = (
+        <aside>
+          Loading ...
+        </aside>
+      );
     } else if (this.state.contentChanged) {
         sidebarContent = (<WelcomeSidebar />);
       } else if (this.data.searchMetadata.facets) {
@@ -261,6 +267,41 @@ const SearchContainer = React.createClass({
     }
     return sidebarContent;
   },
+  rendering(){
+    let content;
+    if (!this.state.searchParams.keywords) {
+      content = (
+        <div className="row">
+          <div className="col-md-4">
+            {this.renderSidebar()}
+          </div>
+          <div className="col-md-8">
+            {this.renderMain()}
+          </div>
+        </div>
+      );
+    }else if(this.state.contentChanged) {
+      content = (
+        <div className="row">
+          <div className="col-md-12">
+            {this.renderMain()}
+          </div>
+        </div>
+      );
+    }else {
+      content = (
+        <div className="row">
+          <div className="col-md-8">
+            {this.renderMain()}
+          </div>
+          <div className="col-md-4">
+            {this.renderSidebar()}
+          </div>
+        </div>
+      );
+    };
+    return content;
+  },
 
   render() {
     return (
@@ -297,14 +338,7 @@ const SearchContainer = React.createClass({
         </header>
         <div className="search-body">
           <div className="container">
-            <div className="row">
-              <div className="col-md-8">
-                {this.renderMain()}
-              </div>
-              <div className="col-md-4">
-                {this.renderSidebar()}
-              </div>
-            </div>
+            {this.rendering()}
           </div>
         </div>
         <Footer />

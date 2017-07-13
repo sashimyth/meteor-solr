@@ -12,7 +12,9 @@ const Footer = () => {
           <p>Sosio Yustisia Bulaksumur, Yogyakarta 55281</p>
           <p>Telp: (0274) 563362 | Fax: (0274) 563362 | Email: dekan_sp@ugm.ac.id</p>
         </div>
-        <div className="footer-bot">
+      </div>
+      <div className="row">
+        <div className="col-md-12 text-center footer-bot">
           Copyright &copy; 2017, Faculty of Social &amp; Political Sciences, Universitas Gadjah Mada
         </div>
       </div>
