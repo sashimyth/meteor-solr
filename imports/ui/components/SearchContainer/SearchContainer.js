@@ -202,65 +202,57 @@ const SearchContainer = React.createClass({
     let sidebarContent;
     if (!this.state.searchParams.keywords) {
       sidebarContent = (<WelcomeSidebar />);
-    } else if (this.data.searchMetadata.facets) {
+    } else if (this.state.contentChanged) {
+        sidebarContent = (<WelcomeSidebar />);
+      } else if (this.data.searchMetadata.facets) {
       sidebarContent = (
         <aside>
           <h2>Refine Your Search</h2>
-          <NestedCategoriesWidget
-            field="source"
-            name="Categories"
-            categories={this.data.searchMetadata.nestedCategories.source}
-            selectedCategoryPath={this.state.searchParams.fields.source}
-            showHelp
-            searchParams={this.state.searchParams}
-            handleSearchParamsUpdate={this.updateSearchParams}
-          />
-          <NestedCategoriesWidget
-            field="date_ss"
-            name="Date"
-            categories={this.data.searchMetadata.nestedCategories.date_ss}
-            selectedCategoryPath={this.state.searchParams.fields.date_ss}
-            searchParams={this.state.searchParams}
-            handleSearchParamsUpdate={this.updateSearchParams}
-            rootNodeLimit={10} sortRootNodesDesc
-          />
           <SearchFacet
-            key="ml_entity_location"
-            name="Location"
-            field="ml_entity_location"
-            values={this.data.searchMetadata.facets.ml_entity_location}
+            key="subyek"
+            name="Subyek"
+            field="subyek"
+            values={this.data.searchMetadata.facets.subyek}
             searchParams={this.state.searchParams}
             handleSearchParamsUpdate={this.updateSearchParams}
           />
           <SearchFacet
-            key="ml_keyword"
-            name="Related Terms"
-            field="ml_keyword"
-            values={this.data.searchMetadata.facets.ml_keyword}
+            key="th_terbit"
+            name="Tahun Terbit"
+            field="th_terbit"
+            values={this.data.searchMetadata.facets.th_terbit}
             searchParams={this.state.searchParams}
             handleSearchParamsUpdate={this.updateSearchParams}
           />
           <SearchFacet
-            key="ml_entity_organization"
-            name="Organization"
-            field="ml_entity_organization"
-            values={this.data.searchMetadata.facets.ml_entity_organization}
+            key="kota_terbit"
+            name="Kota Terbit"
+            field="kota_terbit"
+            values={this.data.searchMetadata.facets.kota_terbit}
             searchParams={this.state.searchParams}
             handleSearchParamsUpdate={this.updateSearchParams}
           />
           <SearchFacet
-            key="pengarang"
-            name="pengarang"
-            field="pengarang"
-            values={this.data.searchMetadata.facets.pengarang}
+            key="penerbit"
+            name="Penerbit"
+            field="penerbit"
+            values={this.data.searchMetadata.facets.penerbit}
             searchParams={this.state.searchParams}
             handleSearchParamsUpdate={this.updateSearchParams}
           />
           <SearchFacet
-            key="doctype"
-            name="Document Type"
-            field="doctype"
-            values={this.data.searchMetadata.facets.doctype}
+            key="kontributor"
+            name="Kontributor"
+            field="kontributor"
+            values={this.data.searchMetadata.facets.kontributor}
+            searchParams={this.state.searchParams}
+            handleSearchParamsUpdate={this.updateSearchParams}
+          />
+          <SearchFacet
+            key="jenis_koleksi"
+            name="Jenis Koleksi"
+            field="jenis_koleksi"
+            values={this.data.searchMetadata.facets.jenis_koleksi}
             searchParams={this.state.searchParams}
             handleSearchParamsUpdate={this.updateSearchParams}
           />

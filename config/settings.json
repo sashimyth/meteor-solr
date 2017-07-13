@@ -11,37 +11,38 @@
         "bahasa",
         "isbn",
         "klasifikasi",
-        "judul",
         "pengarang",
+        "kontributor",
+        "judul",
+        "edisi",
+        "kota_terbit",
         "penerbit",
         "th_terbit",
+        "jml_hlm",
+        "bibliografi",
         "subyek",
+        "jenis_koleksi",
+        "file",
         "file2"
       ],
       "flatFacets": {
-        "doctype": {
+        "kontributor": {
           "limit": 10,
           "sort": "count"
         },
-        "pengarang": {
+        "jenis_koleksi": {
           "limit": 10,
           "sort": "count"
         },
-        "ml_entity_location": {
+        "kota_terbit": {
           "limit": 10,
           "sort": "count"
         },
-        "ml_entity_organization": {
+        "penerbit": {
           "limit": 10,
           "sort": "count"
         },
-        "ml_keyword": {
-          "limit": 10,
-          "sort": "count"
-        }
-      },
-      "hierarchicalFacets": {
-        "source": {
+        "subyek": {
           "limit": 100,
           "sort": "index"
         },
@@ -50,8 +51,17 @@
           "sort": "index"
         }
       },
+      "hierarchicalFacets": {
+        
+      },
       "customFacetLabels": {
-        "doctype": {
+        "jenis_koleksi": {
+          "mkl": "Makalah",
+          "atk": "Dokumen Pengadaaan",
+          "skrp": "Skripsi",
+          "bk": "Buku",
+          "pnlt": "Penelitian",
+          "klp": "Kliping",
           "html": "HTML",
           "pdf": "PDF",
           "other": "Other",
