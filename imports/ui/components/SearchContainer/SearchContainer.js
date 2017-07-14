@@ -25,11 +25,11 @@ const SearchContainer = React.createClass({
 
   getInitialState() {
     return {
-        selected : 1,
         contentChanged : false,
         contentData : this.contentData(),
         searchParams: this.defaultSearchParams(),
         searchSuggestions: [],
+        menuActive : 1,
     };
   },
 
@@ -73,6 +73,15 @@ const SearchContainer = React.createClass({
     };
   },
 
+    contentData(){
+        // default dari state data resulDdetail
+        return {
+            judul : 'kosong',
+            pengarang : 'kosong',
+            file : 'kosong',
+        }
+    },
+
   showContent(){
     // toggle untuk mengubah state dibawah secara langsung
     if (!this.state.contentChanged) {
@@ -89,21 +98,19 @@ const SearchContainer = React.createClass({
     });
   },
 
-  contentData(){
-    // default dari state data resulDdetail
-    return {
-      judul : 'kosong',
-      pengarang : 'kosong',
-      file : 'kosong',
-    }
-  },
-
   changeContentData(newContent){
     // mengubah state data resultDetail
     this.setState({
-      contentData : newContent,
+      contentData : newContent
     });
   },
+
+    changeActiveMenu(newMenuActive){
+        // mengubah tab active menu
+        this.setState({
+            menuActive : newMenuActive,
+        });
+    },
 
   updateSearchParams(newSearchParams) {
     if (newSearchParams) {
@@ -206,7 +213,10 @@ const SearchContainer = React.createClass({
   renderSidebar() {
     let sidebarContent;
     if (!this.state.searchParams.keywords) {
-      sidebarContent = (<WelcomeSidebar />);
+      sidebarContent = (<WelcomeSidebar
+          changeActiveMenu={this.changeActiveMenu}
+          menuActive={this.state.menuActive}
+      />);
     } else if (PowerSearch.getStatus().loading) {
       sidebarContent = (
         <aside>
@@ -214,7 +224,10 @@ const SearchContainer = React.createClass({
         </aside>
       );
     } else if (this.state.contentChanged) {
-        sidebarContent = (<WelcomeSidebar />);
+        sidebarContent = (<WelcomeSidebar
+            changeActiveMenu={this.changeActiveMenu}
+            menuActive={this.state.menuActive}
+        />);
       } else if (this.data.searchMetadata.facets) {
       sidebarContent = (
         <aside>

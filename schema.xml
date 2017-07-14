@@ -409,12 +409,19 @@
   <field name="bahasa" type="string" indexed="true" stored="true" multiValued="false"/>
   <field name="isbn" type="string" indexed="true" stored="true" multiValued="false"/>
   <field name="klasifikasi" type="string" indexed="true" stored="true" multiValued="false"/>
-  <field name="judul" type="string" indexed="true" stored="true" multiValued="false"/>
   <field name="pengarang" type="string" multiValued="false" indexed="true" required="false" stored="true"/>
+  <field name="kontributor" type="string" multiValued="false" indexed="true" required="false" stored="true"/>
+  <field name="judul" type="string" indexed="true" stored="true" multiValued="false"/>
+  <field name="edisi" type="string" indexed="true" stored="true" multiValued="false"/>
+  <field name="kota_terbit" type="string" indexed="true" stored="true" multiValued="false"/>
   <field name="penerbit" type="string" multiValued="false" indexed="true" required="false" stored="true"/>
   <field name="th_terbit" type="string" multiValued="false" indexed="true" required="false" stored="true"/>
+  <field name="jml_hlm" type="string" multiValued="false" indexed="true" required="false" stored="true"/>
+  <field name="bibliografi" type="string" multiValued="false" indexed="true" required="false" stored="true"/>
   <field name="subyek" type="string" multiValued="false" indexed="true" required="false" stored="true"/>
+  <field name="jenis_koleksi" type="string" multiValued="false" indexed="true" required="false" stored="true"/>
   <field name="file2" type="string" multiValued="false" indexed="true" required="true" stored="true"/>
+  <field name="file" type="string" multiValued="false" indexed="true" required="true" stored="true"/>
   
   <field name="author" type="string" indexed="true" stored="true" multiValued="false"/>
   <field name="date_ss" type="string" indexed="true" stored="true" multiValued="true"/>

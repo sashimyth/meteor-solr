@@ -1,18 +1,15 @@
 import React from 'react';
 
+
 const WelcomeSidebar = React.createClass({
-    getInitialState() {
-        return {
-            selected : 1,
-        }
+
+    propTypes: {
+        menuActive: React.PropTypes.number.isRequired,
     },
-    isActive(tabId){
-        return this.state.selected === tabId;
-    },
-    setActive(tab){
-        this.setState({
-            selected : tab,
-        });
+
+    checkActive(tabId){
+        //cek false atau true untuk menu
+        return this.props.menuActive === tabId;
     },
 
     render(){
@@ -27,13 +24,13 @@ const WelcomeSidebar = React.createClass({
                     </div>
                 </div>
                 <div className="list-group text-center">
-                    <a className={!this.isActive(1) ? 'active list-group-item list-group-item-warning' : 'list-group-item list-group-item-warning'} onClick={this.setActive('1')}>
+                    <a className={this.checkActive(1) ? 'active list-group-item list-group-item-warning' : 'list-group-item list-group-item-warning'} >
                         <h1 className="list-group-item-heading">
                             <span className="glyphicon glyphicon-info-sign"/>
                         </h1>
                         <h4 className="list-group-item-heading">Tentang Fisipol Digital Library</h4>
                     </a>
-                    <a className={!this.isActive(2) ? 'active list-group-item list-group-item-warning' : 'list-group-item list-group-item-warning'} onClick={this.setActive('2')}>
+                    <a className={this.checkActive(2) ? 'active list-group-item list-group-item-warning' : 'list-group-item list-group-item-warning'} >
                         <h1 className="list-group-item-heading">
                             <span className="glyphicon glyphicon-book" />
                         </h1>

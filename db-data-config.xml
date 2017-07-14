@@ -8,11 +8,18 @@
        <field column="bahasa" name="bahasa" />
        <field column="isbn" name="isbn" />
        <field column="klasifikasi" name="klasifikasi" />
-       <field column="judul" name="judul" />
        <field column="pengarang" name="pengarang" />
+       <field column="kontributor" name="kontributor" />
+       <field column="judul" name="judul" />
+       <field column="edisi" name="edisi" />
+       <field column="kota_terbit" name="kota_terbit" />
        <field column="penerbit" name="penerbit" />
        <field column="th_terbit" name="th_terbit" />
+       <field column="jml_hlm" name="jml_hlm" />
+       <field column="bibliografi" name="bibliografi" />
        <field column="subyek" name="subyek" />
+       <field column="jenis_koleksi" name="jenis_koleksi" />
+       <field column="file" name="file" />
        <field column="file2" name="file2" />
     </entity>
   </document>
