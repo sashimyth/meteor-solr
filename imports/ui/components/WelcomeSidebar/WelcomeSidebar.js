@@ -13,11 +13,11 @@ const WelcomeSidebar = React.createClass({
     },
 
     changeMenu1(){
-      this.props.changeActiveMenu(1)
+      this.props.changeActiveMenu(1);
     },
 
     changeMenu2(){
-      this.props.changeActiveMenu(2)
+      this.props.changeActiveMenu(2);
     },
 
     render(){
