@@ -25,10 +25,11 @@ const SearchContainer = React.createClass({
 
   getInitialState() {
     return {
-      contentChanged : false,
-      contentData : this.contentData(),
-      searchParams: this.defaultSearchParams(),
-      searchSuggestions: [],
+        selected : 1,
+        contentChanged : false,
+        contentData : this.contentData(),
+        searchParams: this.defaultSearchParams(),
+        searchSuggestions: [],
     };
   },
 
@@ -73,6 +74,7 @@ const SearchContainer = React.createClass({
   },
 
   showContent(){
+    // toggle untuk mengubah state dibawah secara langsung
     if (!this.state.contentChanged) {
       return ("false");
     }else{
@@ -81,12 +83,14 @@ const SearchContainer = React.createClass({
   },
 
   changeContentState(newContentChange){
+    // mengubah kondisi dari state apakah mengujungi detail pencarian
     this.setState({
       contentChanged : newContentChange
     });
   },
 
   contentData(){
+    // default dari state data resulDdetail
     return {
       judul : 'kosong',
       pengarang : 'kosong',
@@ -95,6 +99,7 @@ const SearchContainer = React.createClass({
   },
 
   changeContentData(newContent){
+    // mengubah state data resultDetail
     this.setState({
       contentData : newContent,
     });
@@ -268,6 +273,7 @@ const SearchContainer = React.createClass({
     return sidebarContent;
   },
   rendering(){
+    // Mengubah posisi aside dan main
     let content;
     if (!this.state.searchParams.keywords) {
       content = (

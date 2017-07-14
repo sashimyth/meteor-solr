@@ -37,6 +37,7 @@ const SearchResult = React.createClass({
   },
 
   bringContent(){
+    this.logSearchResult();
     this.props.changeContentState(true);
     const newContentData = _.extend({}, this.props.contentData);
     newContentData.judul = this.props.result.judul;
@@ -63,7 +64,6 @@ const SearchResult = React.createClass({
           <a
             rel="noopener noreferrer"
             className={this.props.result.judul}
-            onClick={this.logSearchResult}
             onClick={this.bringContent}
           >
             {nama}
