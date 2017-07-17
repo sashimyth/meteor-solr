@@ -12,6 +12,14 @@ const WelcomeSidebar = React.createClass({
         return this.props.menuActive === tabId;
     },
 
+    changeMenu1(){
+      this.props.changeActiveMenu(1);
+    },
+
+    changeMenu2(){
+      this.props.changeActiveMenu(2);
+    },
+
     render(){
         return (
             <aside className="welcome-sidebar">
@@ -24,13 +32,13 @@ const WelcomeSidebar = React.createClass({
                     </div>
                 </div>
                 <div className="list-group text-center">
-                    <a className={this.checkActive(1) ? 'active list-group-item list-group-item-warning' : 'list-group-item list-group-item-warning'} >
+                    <a className={this.checkActive(1) ? 'active list-group-item list-group-item-warning' : 'list-group-item list-group-item-warning'} onClick={this.changeMenu1} >
                         <h1 className="list-group-item-heading">
                             <span className="glyphicon glyphicon-info-sign"/>
                         </h1>
                         <h4 className="list-group-item-heading">Tentang Fisipol Digital Library</h4>
                     </a>
-                    <a className={this.checkActive(2) ? 'active list-group-item list-group-item-warning' : 'list-group-item list-group-item-warning'} >
+                    <a className={this.checkActive(2) ? 'active list-group-item list-group-item-warning' : 'list-group-item list-group-item-warning'} onClick={this.changeMenu2} >
                         <h1 className="list-group-item-heading">
                             <span className="glyphicon glyphicon-book" />
                         </h1>
