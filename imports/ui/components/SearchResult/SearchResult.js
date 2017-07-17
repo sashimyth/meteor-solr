@@ -37,11 +37,17 @@ const SearchResult = React.createClass({
   },
 
   bringContent(){
-    this.logSearchResult();
+    this.logSearchResult;
     this.props.changeContentState(true);
     const newContentData = _.extend({}, this.props.contentData);
     newContentData.judul = this.props.result.judul;
+    newContentData.tahun = this.props.result.th_terbit;
+    newContentData.kota = this.props.result.kota_terbit;
+    newContentData.klasifikasi = this.props.result.klasifikasi;
+    newContentData.halaman = this.props.result.jml_hlm;
+    newContentData.subyek = this.props.result.subyek;
     newContentData.pengarang = this.props.result.pengarang;
+    newContentData.penerbit = this.props.result.penerbit;
     newContentData.file = this.props.result.file2;
     this.props.changeContentData(newContentData);
   },
@@ -75,7 +81,7 @@ const SearchResult = React.createClass({
         </div>
         <div className="search-metadata">
           {SearchFacetUtils.getCustomValue('pengarang', this.props.result.pengarang)}
-          &nbsp;| {DateFormatter.format(this.props.result.lastmodified)} | <a
+          &nbsp;| {this.props.result.th_terbit} | <a
             href={pdf}
             target="_blank"
         >

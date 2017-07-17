@@ -78,6 +78,12 @@ const SearchContainer = React.createClass({
         return {
             judul : 'kosong',
             pengarang : 'kosong',
+            halaman : 'kosong',
+            klasifikasi : 'kosong',
+            subyek : 'kosong',
+            kota : 'kosong',
+            tahun : 'kosong',
+            penerbit : 'kosong',
             file : 'kosong',
         }
     },
