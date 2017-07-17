@@ -48,6 +48,7 @@ const SearchResult = React.createClass({
     newContentData.subyek = this.props.result.subyek;
     newContentData.pengarang = this.props.result.pengarang;
     newContentData.penerbit = this.props.result.penerbit;
+    newContentData.jml_hlm = this.props.result.jml_hlm;
     newContentData.file = this.props.result.file2;
     this.props.changeContentData(newContentData);
   },
@@ -81,7 +82,7 @@ const SearchResult = React.createClass({
         </div>
         <div className="search-metadata">
           {SearchFacetUtils.getCustomValue('pengarang', this.props.result.pengarang)}
-          &nbsp;| {this.props.result.th_terbit} 
+          &nbsp;| {this.props.result.th_terbit} | {this.props.result.jml_hlm}
         </div>
       </li>
     );
