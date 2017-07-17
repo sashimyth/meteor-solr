@@ -86,6 +86,7 @@ const SearchContainer = React.createClass({
             tahun : 'kosong',
             penerbit : 'kosong',
             file : 'kosong',
+            jml_hlm : 'kosong',
         }
     },
 
