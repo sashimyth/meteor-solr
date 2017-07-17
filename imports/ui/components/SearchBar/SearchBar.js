@@ -43,7 +43,9 @@ const SearchBar = React.createClass({
       this.setState({ showSuggestions: true });
     }
     const keywords = event.target.value;
-    if (keywords) {
+    if (keywords != ':' && keywords != ' ' && keywords != '*' 
+      && keywords != '/' && keywords != '"' && keywords != '#' 
+      && keywords != '$' && keywords != ';') {
       if (keywords.indexOf(this.state.keywords) === -1) {
         this.resetSearch();
       }
