@@ -4,9 +4,7 @@
 import React from 'react';
 import { _ } from 'meteor/underscore';
 
-import SearchSort from '../../../api/search/search_sort';
-
-const Sorting = React.createClass({
+const Counting = React.createClass({
 
   propTypes: {
     searchParams: React.PropTypes.object.isRequired,
@@ -15,35 +13,29 @@ const Sorting = React.createClass({
 
   updateSearchParams(event) {
     const newSearchParams = _.extend({}, this.props.searchParams);
-    newSearchParams.resultsPerPage = event.currentTarget.value;
+    newSearchParams.resultsPerPage = event.target.value;
     newSearchParams.currentPage = 1;
     this.props.handleSearchParamsUpdate(newSearchParams);
     window.scroll(0, 0);
   },
 
-  renderSortOptions() {
-    const sortOptions = [
+  renderCountOptions() {
+    const countOptions = [
       {
         label: '10',
-        value: this.setState ({
-          resultsPerPage : 10,
-        }),
+        value: 10,
       },
       {
         label: '20',
-        value: this.setState({
-          resultsPerPage : 20,
-        }),
+        value: 20,
       },
       {
         label: '50',
-        value: this.setState({
-          resultsPerPage : 50,
-        }),
+        value: 50,
       },
     ];
     const renderedOptions = [];
-    sortOptions.forEach((option) => {
+    countOptions.forEach((option) => {
       renderedOptions.push(
         <option key={option.value} value={option.value}>
           {option.label}
@@ -61,7 +53,7 @@ const Sorting = React.createClass({
           onChange={this.updateSearchParams}
           value={this.props.searchParams.resultsPerPage}
         >
-          {this.renderSortOptions()}
+          {this.renderCountOptions()}
         </select>
       </div>
     );
@@ -69,4 +61,4 @@ const Sorting = React.createClass({
 
 });
 
-export default Sorting;
+export default Counting;

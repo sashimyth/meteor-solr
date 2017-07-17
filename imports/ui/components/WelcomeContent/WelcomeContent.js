@@ -89,7 +89,6 @@ const WelcomeContent = React.createClass({
                 const SearchConfig = {};
                 _.extend(SearchConfig, Meteor.settings.public.search);
                 const customLabels = SearchConfig.customFacetLabels[this.props.field];
-                console.log(customLabels);
                 Object.keys(customLabels).map((key) => {
                    valueCat.push(
                        this.renderKoleksi((key))

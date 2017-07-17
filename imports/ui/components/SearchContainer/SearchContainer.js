@@ -67,7 +67,7 @@ const SearchContainer = React.createClass({
       keywords: '',
       fields: {},
       currentPage: 1,
-      resultsPerPage: 20,
+      resultsPerPage: 10,
       lastAddedFieldName: null,
       suggestionKeywords: '',
       sorting: SearchSort.lookup.relevancy.id,
