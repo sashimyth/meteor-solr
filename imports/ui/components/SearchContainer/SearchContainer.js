@@ -10,6 +10,7 @@ import WelcomeContent from '../WelcomeContent/WelcomeContent';
 import WelcomeSidebar from '../WelcomeSidebar/WelcomeSidebar';
 import ResultsCount from '../ResultsCount/ResultsCount';
 import Sorting from '../Sorting/Sorting';
+import Counting from '../Counting/Counting';
 import SearchResults from '../SearchResults/SearchResults';
 import Pagination from '../Pagination/Pagination';
 import NestedCategoriesWidget from '../NestedCategoriesWidget/NestedCategoriesWidget';
@@ -169,7 +170,7 @@ const SearchContainer = React.createClass({
         mainContent = (
           <main>
             <div className="row">
-              <div className="col-md-9">
+              <div className="col-md-7">
                 <ResultsCount
                   searchMetadata={this.data.searchMetadata}
                   searchParams={this.state.searchParams}
@@ -177,6 +178,13 @@ const SearchContainer = React.createClass({
               </div>
               <div className="col-md-3">
                 <Sorting
+                  searchParams={this.state.searchParams}
+                  handleSearchParamsUpdate={this.updateSearchParams}
+                />
+              </div>
+
+              <div className="col-sm-2">
+                <Counting
                   searchParams={this.state.searchParams}
                   handleSearchParamsUpdate={this.updateSearchParams}
                 />

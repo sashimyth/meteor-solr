@@ -81,12 +81,7 @@ const SearchResult = React.createClass({
         </div>
         <div className="search-metadata">
           {SearchFacetUtils.getCustomValue('pengarang', this.props.result.pengarang)}
-          &nbsp;| {this.props.result.th_terbit} | <a
-            href={pdf}
-            target="_blank"
-        >
-            Lihat file {pdf}
-        </a>
+          &nbsp;| {this.props.result.th_terbit} 
         </div>
       </li>
     );
