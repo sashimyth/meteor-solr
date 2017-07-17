@@ -66,7 +66,7 @@ const SearchContainer = React.createClass({
       keywords: '',
       fields: {},
       currentPage: 1,
-      resultsPerPage: 10,
+      resultsPerPage: 20,
       lastAddedFieldName: null,
       suggestionKeywords: '',
       sorting: SearchSort.lookup.relevancy.id,
@@ -147,7 +147,14 @@ const SearchContainer = React.createClass({
     if (!this.state.searchParams.keywords) {
       mainContent = (
         <main>
-          <WelcomeContent />
+          <WelcomeContent
+            menuActive={this.state.menuActive}
+            key="jenis_koleksi"
+            name="Jenis Koleksi"
+            field="jenis_koleksi"
+            searchParams={this.state.searchParams}
+            handleSearchParamsUpdate={this.updateSearchParams}
+          />
         </main>
       );
     } else if (PowerSearch.getStatus().loaded) {
@@ -155,7 +162,7 @@ const SearchContainer = React.createClass({
         mainContent = (
             <main>
               <ResultDetail
-                contentData={this.state.contentData} 
+                contentData={this.state.contentData}
               />
             </main>
           );
@@ -343,6 +350,8 @@ const SearchContainer = React.createClass({
                 </div>
                 <div className="col-md-8">
                   <SearchBar
+                    menuActive={this.state.menuActive}
+                    changeActiveMenu={this.changeActiveMenu}
                     changeContentState={this.changeContentState}
                     searchParams={this.state.searchParams}
                     handleSearchParamsUpdate={this.updateSearchParams}

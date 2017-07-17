@@ -2,9 +2,9 @@ body
   header
     .navbar
       background-image url("images/top.png")
-      background-position-y -30px
+      background-position-y -110px
       background-repeat no-repeat
-      background-size contain
+      background-size cover
   .blue-top
     background-color #112539
   .navbar-brand img, .navbar-brand span
@@ -28,10 +28,13 @@ aside
   border-left 1px solid #7e7e7e
   padding-left 5%
 
-@media (max-width: 1000px)
++below($mobileCutOff)
   main
     margin-top 0
   aside
     margin-top 0px
     min-height 0px
     border 0px
+  .navbar
+    background-position-y 0px
+

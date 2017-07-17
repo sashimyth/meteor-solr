@@ -32,13 +32,13 @@ const WelcomeSidebar = React.createClass({
                     </div>
                 </div>
                 <div className="list-group text-center">
-                    <a className={this.checkActive(1) ? 'active list-group-item list-group-item-warning' : 'list-group-item list-group-item-warning'} onClick={this.changeMenu1} >
+                    <a className={this.checkActive(1) ? 'active list-group-item' : 'list-group-item'} onClick={this.changeMenu1} >
                         <h1 className="list-group-item-heading">
                             <span className="glyphicon glyphicon-info-sign"/>
                         </h1>
                         <h4 className="list-group-item-heading">Tentang Fisipol Digital Library</h4>
                     </a>
-                    <a className={this.checkActive(2) ? 'active list-group-item list-group-item-warning' : 'list-group-item list-group-item-warning'} onClick={this.changeMenu2} >
+                    <a className={this.checkActive(2) ? 'active list-group-item' : 'list-group-item'} onClick={this.changeMenu2} >
                         <h1 className="list-group-item-heading">
                             <span className="glyphicon glyphicon-book" />
                         </h1>

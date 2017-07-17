@@ -61,16 +61,7 @@
           "skrp": "Skripsi",
           "bk": "Buku",
           "pnlt": "Penelitian",
-          "klp": "Kliping",
-          "html": "HTML",
-          "pdf": "PDF",
-          "other": "Other",
-          "configuration": "Configuration",
-          "presentation": "Presentation",
-          "text": "Text",
-          "wordprocessor": "Wordprocessor",
-          "archive": "Archive",
-          "spreadsheet": "Spreadsheet"
+          "klp": "Kliping"
         }
       }
     },

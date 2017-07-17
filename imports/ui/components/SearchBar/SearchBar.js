@@ -11,6 +11,8 @@ const SearchBar = React.createClass({
     handleSearchParamsUpdate: React.PropTypes.func.isRequired,
     searchSuggestions: React.PropTypes.array,
     requestSuggestions: React.PropTypes.func.isRequired,
+    menuActive: React.PropTypes.number,
+    changeActiveMenu: React.PropTypes.func,
   },
 
   getDefaultProps() {
@@ -80,6 +82,7 @@ const SearchBar = React.createClass({
       selectedSuggestionIndex: -1,
     });
     this.props.changeContentState(false);
+    this.props.changeActiveMenu(1);
   },
 
   handleSubmit(event) {
