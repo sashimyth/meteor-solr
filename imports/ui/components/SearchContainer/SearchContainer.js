@@ -191,7 +191,7 @@ const SearchContainer = React.createClass({
                 />
               </div>
 
-              <div className="col-sm-2">
+              <div className="col-md-2">
                 <Counting
                   searchParams={this.state.searchParams}
                   handleSearchParamsUpdate={this.updateSearchParams}

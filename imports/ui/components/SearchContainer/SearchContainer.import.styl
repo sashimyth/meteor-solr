@@ -2,7 +2,6 @@ body
   header
     .navbar
       background-image url("images/top.png")
-      background-position-y -110px
       background-repeat no-repeat
       background-size cover
   .blue-top
@@ -28,12 +27,21 @@ aside
   border-left 1px solid #7e7e7e
   padding-left 5%
 
++above(800px)
+  header
+    .navbar
+      background-position-y -110px
+
++below(800px)
+  header
+    .navbar
+      background-position-y 0px
+
 +below($mobileCutOff)
   main
     margin-top 0
   aside
     margin-top 0px
-    min-height 0px
     border 0px
   .navbar
     background-position-y 0px

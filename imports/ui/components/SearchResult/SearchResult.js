@@ -81,8 +81,12 @@ const SearchResult = React.createClass({
 
         </div>
         <div className="search-metadata">
-          {SearchFacetUtils.getCustomValue('pengarang', this.props.result.pengarang)}
-          &nbsp;| {this.props.result.th_terbit} | {this.props.result.jml_hlm}
+          <dl className="">
+            <dt>Sumber: </dt><dd>{this.props.result.penerbit}</dd>
+            <dt>Pengarang: </dt><dd>{this.props.result.pengarang}</dd>
+            <dd><span className="label label-warning">Tahun terbit: {this.props.result.th_terbit}</span> &nbsp;
+            <span className="label label-warning">Jumlah halaman: {this.props.result.jml_hlm}</span></dd>
+          </dl>
         </div>
       </li>
     );

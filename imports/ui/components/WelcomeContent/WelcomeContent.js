@@ -32,14 +32,7 @@ const WelcomeContent = React.createClass({
                   <h1>Selamat datang di situs web Perpustakaan FISIPOL UGM</h1>
               </div>
               <div className="panel-body">
-                  <div className="welcome-get-started clearfix">
-                      <div className="pull-left hidden-xs">
-                          <i className="fa fa-info-circle fa-2x" />
-                      </div>
-                      <div className="pull-left welcome-get-started-msg">
-                          Untuk memulai pencarian, masukkan kata kunci pada kotak diatas
-                      </div>
-                  </div>
+
                   <h3>Tentang Perpustakaan Digital FISIPOL UGM</h3>
                   <p>
                       Situs ini adalah situs yang dibangun oleh perpustakaan
@@ -58,6 +51,15 @@ const WelcomeContent = React.createClass({
                       <li> Dengan bermacam jenis koleksi </li>
                       <li> Pencarian cepat dan tepat </li>
                   </ul>
+
+                  <div className="welcome-get-started clearfix">
+                      <div className="pull-left hidden-xs">
+                          <i className="fa fa-info-circle fa-2x" />
+                      </div>
+                      <div className="pull-left welcome-get-started-msg">
+                          Untuk memulai pencarian, masukkan kata kunci pada kotak diatas
+                      </div>
+                  </div>
               </div>
           </div>
       );

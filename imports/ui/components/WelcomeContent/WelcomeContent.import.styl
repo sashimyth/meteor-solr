@@ -1,41 +1,55 @@
 .welcome-content
   h1
     font-size 34px
-    span
-      padding 6%
-      background #ffb62c
-      border-radius 100%
-      color #333
-      margin 3%
   .list-group
     display flex
     flex-wrap wrap
   a.list-group-item
     width 47%
     margin-bottom 15px
-    background #112539
     margin-right 3%
     h1,h4
-      color #ffb62c
+      color #333
+      font-weight bold
+      span
+        font-size larger
+        padding 10%
+        background #333
+        border-radius 100%
+        color #ffb62c
+        margin 3%
   a.list-group-item:hover, a.list-group-item:focus
     background-color #ffb62ccc
     border 0
-    border-left 5px solid #112539
+    border-left 5px solid #333
     span
       color #ffb62c
       background #333
     h1,h4
-      color #112539
+      color #333
   a.list-group-item.active
     background-color #ffb62c
     border 0
-    border-left 5px solid #112539
+    border-left 5px solid #333
   .welcome-get-started
-    background #333
-    color #ffb62c
-    border-left 5px solid #ffb62c
+    background #ffb62c
+    color #333
+    border-left 5px solid #333
     padding 10px 20px 10px 10px
+    h1
+      font-weight normal
+    .panel-body
+      .welcome-get-started
+        background #ffb62ccc
   .welcome-get-started-msg
     line-height 28px
     margin-left 10px
     font-size 16px
+
++below($mobileCutOff)
+  .welcome-content
+    a.list-group-item
+      h1
+        span
+          font-size x-large
+          padding 15%
