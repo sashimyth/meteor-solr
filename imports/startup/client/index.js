@@ -9,5 +9,6 @@ import Search from '../../ui/pages/Search';
 render((
   <Router history={browserHistory}>
     <Route path="/" component={Search} />
+    <Route path="/:judul" component={Search} />
   </Router>
 ), document.getElementById('app'));

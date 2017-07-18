@@ -8,13 +8,13 @@ const SearchSort = {
     },
     lastModifiedDesc: {
       id: 'lastModifiedDesc',
-      field: 'lastmodified',
+      field: 'th_terbit',
       order: 'desc',
       orderNum: -1,
     },
     lastModifiedAsc: {
       id: 'lastModifiedAsc',
-      field: 'lastmodified',
+      field: 'th_terbit',
       order: 'asc',
       orderNum: 1,
     },
