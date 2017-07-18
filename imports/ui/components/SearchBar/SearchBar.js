@@ -51,6 +51,26 @@ const SearchBar = React.createClass({
       }
       this.setState({ keywords });
       this.setSearchKeywords();
+      this.props.changeContentState(false);
+    } else {
+      this.resetSearch();
+    }
+  },
+
+  performSearchButton(event) {
+    if (!this.state.showSuggestions) {
+      this.setState({ showSuggestions: true });
+    }
+    const keywords = this.state.keywords;
+    if (keywords != ':' && keywords != ' ' && keywords != '*'
+      && keywords != '/' && keywords != '"' && keywords != '#'
+      && keywords != '$' && keywords != ';') {
+      if (keywords.indexOf(this.state.keywords) === -1) {
+        this.resetSearch();
+      }
+      this.setState({ keywords });
+      this.setSearchKeywords();
+      this.props.changeContentState(false);
     } else {
       this.resetSearch();
     }
@@ -93,6 +113,10 @@ const SearchBar = React.createClass({
   },
 
   selectSuggestion(event) {
+    if (event.keyCode === 13){
+      this.performSearchButton();
+    }
+
     if (event.keyCode === 40
         && (this.state.selectedSuggestionIndex
           < this.props.searchSuggestions.length - 1)) {
@@ -225,9 +249,9 @@ const SearchBar = React.createClass({
               onKeyDown={this.selectSuggestion}
               value={this.state.keywords}
             />
-            <span className="input-group-addon">
+            <div className="input-group-addon" onClick={this.performSearchButton}>
               <i className="fa fa-search" />
-            </span>
+            </div>
           </div>
           {this.renderSearchSuggestions()}
         </form>

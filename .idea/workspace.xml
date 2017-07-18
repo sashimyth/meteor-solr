@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="226c58e7-39a2-4005-a325-3fa8e312eae4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/api/search/search_sort.js" afterPath="$PROJECT_DIR$/imports/api/search/search_sort.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/startup/client/index.js" afterPath="$PROJECT_DIR$/imports/startup/client/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/components/SearchBar/SearchBar.js" afterPath="$PROJECT_DIR$/imports/ui/components/SearchBar/SearchBar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imports/ui/pages/Search.js" afterPath="$PROJECT_DIR$/imports/ui/pages/Search.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,21 +23,31 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Sorting.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/imports/ui/components/Sorting/Sorting.js">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imports/startup/client/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="6" column="51" lean-forward="true" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
+            <state relative-caret-position="170">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search_sort.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/imports/api/search/search_sort.js">
+      <file leaf-file-name="SearchContainer.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imports/ui/components/SearchContainer/SearchContainer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+            <state relative-caret-position="461">
+              <caret line="182" column="54" lean-forward="true" selection-start-line="182" selection-start-column="54" selection-end-line="182" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SearchBar.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/imports/ui/components/SearchBar/SearchBar.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="72" column="24" lean-forward="false" selection-start-line="72" selection-start-column="24" selection-end-line="72" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -73,22 +85,23 @@
       <list>
         <option value="$PROJECT_DIR$/imports/ui/components/SearchBar/SearchBar.import.styl" />
         <option value="$PROJECT_DIR$/imports/ui/components/SearchLogo/SearchLogo.js" />
-        <option value="$PROJECT_DIR$/imports/ui/components/SearchBar/SearchBar.js" />
         <option value="$PROJECT_DIR$/imports/ui/components/WelcomeSidebar/WelcomeSidebar.js" />
         <option value="$PROJECT_DIR$/config/settings.json" />
         <option value="$PROJECT_DIR$/imports/ui/components/ResultDetail/ResultDetail.js" />
         <option value="$PROJECT_DIR$/imports/ui/components/SearchResult/SearchResult.import.styl" />
         <option value="$PROJECT_DIR$/imports/ui/components/WelcomeContent/WelcomeContent.js" />
         <option value="$PROJECT_DIR$/imports/ui/components/SearchContainer/SearchContainer.js" />
-        <option value="$PROJECT_DIR$/imports/ui/components/SearchResult/SearchResult.js" />
         <option value="$PROJECT_DIR$/imports/ui/components/WelcomeContent/WelcomeContent.import.styl" />
         <option value="$PROJECT_DIR$/imports/ui/components/SearchContainer/SearchContainer.import.styl" />
         <option value="$PROJECT_DIR$/imports/ui/components/SearchFacet/SearchFacet.import.styl" />
         <option value="$PROJECT_DIR$/imports/ui/components/Footer/Footer.import.styl" />
         <option value="$PROJECT_DIR$/imports/ui/components/Pagination/Pagination.import.styl" />
         <option value="$PROJECT_DIR$/imports/ui/components/WelcomeSidebar/WelcomeSidebar.import.styl" />
-        <option value="$PROJECT_DIR$/imports/startup/client/index.js" />
         <option value="$PROJECT_DIR$/imports/api/search/search_sort.js" />
+        <option value="$PROJECT_DIR$/imports/ui/components/SearchResult/SearchResult.js" />
+        <option value="$PROJECT_DIR$/imports/ui/pages/Search.js" />
+        <option value="$PROJECT_DIR$/imports/startup/client/index.js" />
+        <option value="$PROJECT_DIR$/imports/ui/components/SearchBar/SearchBar.js" />
       </list>
     </option>
   </component>
@@ -147,24 +160,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="meteor-solr-demo-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="meteor-solr-demo-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="imports" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -184,6 +179,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -762,12 +761,12 @@
       <workItem from="1500023630974" duration="1630000" />
       <workItem from="1500251614695" duration="25066000" />
       <workItem from="1500340062610" duration="9919000" />
-      <workItem from="1500362451232" duration="859000" />
+      <workItem from="1500362451232" duration="6932000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90606000" />
+    <option name="totallyTimeSpent" value="96679000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -778,7 +777,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5029762" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25297618" sideWeight="0.5057283" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19967267" sideWeight="0.49702382" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19967267" sideWeight="0.49702382" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -957,13 +956,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/imports/ui/pages/PdfContent.js" />
-    <entry file="file://$PROJECT_DIR$/imports/ui/pages/Search.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/imports/ui/components/PdfContent/PdfContent.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -1009,14 +1001,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/components/SearchBar/SearchBar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="76" column="27" lean-forward="true" selection-start-line="76" selection-start-column="27" selection-end-line="76" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/imports/api/search/search_response.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-547">
@@ -1038,14 +1022,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/components/SearchResults/SearchResults.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-119">
-          <caret line="16" column="43" lean-forward="true" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/imports/ui/components/SearchFacet/SearchFacet.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="83">
@@ -1053,13 +1029,6 @@
           <folding>
             <element signature="e#65#91#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/settings.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="24" column="15" lean-forward="true" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -1083,26 +1052,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/components/SearchResult/SearchResult.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="83" column="25" lean-forward="false" selection-start-line="83" selection-start-column="25" selection-end-line="83" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/imports/ui/components/SearchResult/SearchResult.import.styl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/components/SearchContainer/SearchContainer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2686">
-          <caret line="193" column="36" lean-forward="false" selection-start-line="193" selection-start-column="36" selection-end-line="193" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1167,10 +1120,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imports/startup/client/index.js">
+    <entry file="file://$PROJECT_DIR$/imports/api/search/search_sort.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="374">
+          <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -1183,10 +1136,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imports/api/search/search_sort.js">
+    <entry file="file://$PROJECT_DIR$/config/settings.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+        <state relative-caret-position="289">
+          <caret line="24" column="15" lean-forward="false" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/components/SearchResults/SearchResults.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="16" column="43" lean-forward="true" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/components/SearchResult/SearchResult.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="69" column="44" lean-forward="false" selection-start-line="69" selection-start-column="44" selection-end-line="69" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/startup/client/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/pages/Search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/components/SearchContainer/SearchContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="182" column="54" lean-forward="true" selection-start-line="182" selection-start-column="54" selection-end-line="182" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/components/SearchBar/SearchBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="72" column="24" lean-forward="false" selection-start-line="72" selection-start-column="24" selection-end-line="72" selection-end-column="24" />
           <folding />
         </state>
       </provider>
