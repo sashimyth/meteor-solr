@@ -21,7 +21,7 @@ const SearchSort = {
   },
 
   getSolrSort(id) {
-    return `${this.lookup[id].field}+${this.lookup[id].order}`;
+    return `${this.g[id].field}+${this.lookup[id].order}`;
   },
 
   getMongoSort(id) {
