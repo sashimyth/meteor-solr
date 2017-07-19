@@ -8,6 +8,7 @@ import SearchLogger from '../../../utility/search_logger';
 import getSuggestions from '../../../api/search/autosuggest';
 import WelcomeContent from '../WelcomeContent/WelcomeContent';
 import WelcomeSidebar from '../WelcomeSidebar/WelcomeSidebar';
+import DetailSidebar from '../DetailSidebar/DetailSidebar';
 import ResultsCount from '../ResultsCount/ResultsCount';
 import Sorting from '../Sorting/Sorting';
 import Counting from '../Counting/Counting';
@@ -173,6 +174,8 @@ const SearchContainer = React.createClass({
             <main>
               <ResultDetail
                 contentData={this.state.contentData}
+                changeActiveMenu={this.changeActiveMenu}
+                menuActive={this.state.menuActive}
               />
             </main>
           );
@@ -249,7 +252,7 @@ const SearchContainer = React.createClass({
         </aside>
       );
     } else if (this.state.contentChanged) {
-        sidebarContent = (<WelcomeSidebar
+        sidebarContent = (<DetailSidebar
             changeActiveMenu={this.changeActiveMenu}
             menuActive={this.state.menuActive}
         />);
@@ -310,6 +313,7 @@ const SearchContainer = React.createClass({
     }
     return sidebarContent;
   },
+
   rendering(){
     // Mengubah posisi aside dan main
     let content;
@@ -327,9 +331,12 @@ const SearchContainer = React.createClass({
     }else if(this.state.contentChanged) {
       content = (
         <div className="row">
-          <div className="col-md-12">
-            {this.renderMain()}
-          </div>
+            <div className="col-md-4">
+                {this.renderSidebar()}
+            </div>
+            <div className="col-md-8">
+                {this.renderMain()}
+            </div>
         </div>
       );
     }else {
