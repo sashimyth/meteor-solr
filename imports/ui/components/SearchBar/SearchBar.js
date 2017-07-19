@@ -65,6 +65,7 @@ const SearchBar = React.createClass({
     const keywords = this.state.keywords;
     if (keywords != ':' && keywords != ' ' && keywords != '*'
       && keywords != '/' && keywords != '"' && keywords != '#'
+      && keywords != '.' && keywords != ',' && keywords != '!'
       && keywords != '$' && keywords != ';') {
       if (keywords.indexOf(this.state.keywords) === -1) {
         this.resetSearch();

@@ -331,10 +331,10 @@ const SearchContainer = React.createClass({
     }else if(this.state.contentChanged) {
       content = (
         <div className="row">
-            <div className="col-md-4">
+            <div className="col-md-2">
                 {this.renderSidebar()}
             </div>
-            <div className="col-md-8">
+            <div className="col-md-10">
                 {this.renderMain()}
             </div>
         </div>

@@ -25,7 +25,7 @@ const WelcomeSidebar = React.createClass({
             <aside className="welcome-sidebar">
                 <div className="panel panel-default help-panel">
                     <div className="panel-heading clearfix">
-                        <strong>Need Help?</strong>
+                        <strong>Bantuan</strong>
                     </div>
                     <div className="panel-body">
                         Help instructions go here ...
