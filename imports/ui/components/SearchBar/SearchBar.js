@@ -245,7 +245,7 @@ const SearchBar = React.createClass({
       );
     }else {
       backbutton = (
-          <button className="btn btn-default" onClick={this.backResultButton} >Kembali</button>
+          <button className="btn btn-default" onClick={this.backResultButton} >❮ Kembali</button>
       );
     }
     return backbutton;
