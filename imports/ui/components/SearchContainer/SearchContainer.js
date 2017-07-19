@@ -71,6 +71,8 @@ const SearchContainer = React.createClass({
       lastAddedFieldName: null,
       suggestionKeywords: '',
       sorting: SearchSort.lookup.relevancy.id,
+      lastKeywords : '',
+      lastPage : '',
     };
   },
 
@@ -205,6 +207,7 @@ const SearchContainer = React.createClass({
               searchResults={this.data.searchResults}
               searchParams={this.state.searchParams}
               searchMetadata={this.data.searchMetadata}
+              handleSearchParamsUpdate={this.updateSearchParams}
             />
             <Pagination
               searchMetadata={this.data.searchMetadata}
@@ -360,13 +363,12 @@ const SearchContainer = React.createClass({
                 </div>
               </div>
               <div className="row">
-                <div className="col-md-2">
-
-                </div>
+                <div className="col-md-2"></div>
                 <div className="col-md-8">
                   <SearchBar
                     menuActive={this.state.menuActive}
                     changeActiveMenu={this.changeActiveMenu}
+                    contentState={this.state.contentChanged}
                     changeContentState={this.changeContentState}
                     searchParams={this.state.searchParams}
                     handleSearchParamsUpdate={this.updateSearchParams}

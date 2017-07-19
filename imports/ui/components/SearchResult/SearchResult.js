@@ -12,6 +12,8 @@ const SearchResult = React.createClass({
     result: React.PropTypes.object,
     currentPage: React.PropTypes.number.isRequired,
     searchMetadata: React.PropTypes.object.isRequired,
+    searchParams: React.PropTypes.object,
+    handleSearchParamsUpdate: React.PropTypes.func,
   },
 
   logSearchResult(event) {
@@ -36,9 +38,14 @@ const SearchResult = React.createClass({
     return cleanContent;
   },
 
+  updateSearchParams(newSearchParams) {
+      this.props.handleSearchParamsUpdate(newSearchParams);
+  },
+
   bringContent(){
     this.logSearchResult;
     this.props.changeContentState(true);
+
     const newContentData = _.extend({}, this.props.contentData);
     newContentData.judul = this.props.result.judul;
     newContentData.tahun = this.props.result.th_terbit;
@@ -51,6 +58,13 @@ const SearchResult = React.createClass({
     newContentData.jml_hlm = this.props.result.jml_hlm;
     newContentData.file = this.props.result.file2;
     this.props.changeContentData(newContentData);
+
+    // record last search on back
+    const newSearchParams = _.extend({}, this.props.searchParams);
+    newSearchParams.lastKeywords = this.props.searchParams.keywords;
+    newSearchParams.lastPage = this.props.currentPage;
+    this.updateSearchParams(newSearchParams);
+
   },
 
   renderContent() {

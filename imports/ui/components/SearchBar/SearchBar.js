@@ -12,6 +12,7 @@ const SearchBar = React.createClass({
     searchSuggestions: React.PropTypes.array,
     requestSuggestions: React.PropTypes.func.isRequired,
     menuActive: React.PropTypes.number,
+    contentState: React.PropTypes.bool.isRequired,
     changeActiveMenu: React.PropTypes.func,
   },
 
@@ -74,6 +75,10 @@ const SearchBar = React.createClass({
     } else {
       this.resetSearch();
     }
+  },
+
+  backResultButton(){
+      this.props.changeContentState(false);
   },
 
   requestSuggestions(keywords) {
@@ -232,29 +237,46 @@ const SearchBar = React.createClass({
     return suggestionList;
   },
 
+  renderBackButton(){
+    let backbutton;
+    if (!this.props.contentState){
+      backbutton = (
+          <button className="btn hide btn-default" >Kembali</button>
+      );
+    }else {
+      backbutton = (
+          <button className="btn btn-default" onClick={this.backResultButton} >Kembali</button>
+      );
+    }
+    return backbutton;
+  },
+
   render() {
     return (
       <div className="search-bar clearfix">
-        <form
-          className="navbar-form"
-          role="search"
-          onSubmit={this.handleSubmit}
-        >
-          <div className="input-group">
-            <input
-              ref="keywords"
-              className="form-control"
-              placeholder="Search keywords" autoFocus
-              onChange={this.performSearch}
-              onKeyDown={this.selectSuggestion}
-              value={this.state.keywords}
-            />
-            <div className="input-group-addon" onClick={this.performSearchButton}>
-              <i className="fa fa-search" />
+        <div className="flex-bar">
+          {this.renderBackButton()}
+          <form
+              className="navbar-form"
+              role="search"
+              onSubmit={this.handleSubmit}
+          >
+            <div className="input-group">
+              <input
+                  ref="keywords"
+                  className="form-control"
+                  placeholder="Search keywords" autoFocus
+                  onChange={this.performSearch}
+                  onKeyDown={this.selectSuggestion}
+                  value={this.state.keywords}
+              />
+              <div className="input-group-addon" onClick={this.performSearchButton}>
+                <i className="fa fa-search" />
+              </div>
             </div>
-          </div>
-          {this.renderSearchSuggestions()}
-        </form>
+              {this.renderSearchSuggestions()}
+          </form>
+        </div>
         <div className="search-reset">
           <a href="#reset" onClick={this.resetSearch}>Reset search?</a>
         </div>

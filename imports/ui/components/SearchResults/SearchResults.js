@@ -11,6 +11,7 @@ const SearchResults = React.createClass({
     searchResults: React.PropTypes.array.isRequired,
     searchParams: React.PropTypes.object.isRequired,
     searchMetadata: React.PropTypes.object.isRequired,
+    handleSearchParamsUpdate: React.PropTypes.func,
   },
 
   resultsStartCount() {
@@ -30,6 +31,8 @@ const SearchResults = React.createClass({
         result={searchResult}
         currentPage={this.props.searchParams.currentPage}
         searchMetadata={this.props.searchMetadata}
+        searchParams={this.props.searchParams}
+        handleSearchParamsUpdate={this.props.handleSearchParamsUpdate}
       />
     ));
   },
