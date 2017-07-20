@@ -152,6 +152,21 @@ const SearchContainer = React.createClass({
       });
     }
   },
+  casLogout(event){
+        event.preventDefault()
+        Meteor.logout()
+        return false;
+  },
+  casLogin(event){
+        event.preventDefault();
+        const call = (err) => {
+            if (err) {
+                console.log(err)
+            }
+        };
+        Meteor.loginWithCas(call);
+        return false;
+  },
 
   renderMain() {
     let mainContent;
@@ -243,6 +258,7 @@ const SearchContainer = React.createClass({
     if (!this.state.searchParams.keywords) {
       sidebarContent = (<WelcomeSidebar
           changeActiveMenu={this.changeActiveMenu}
+          casLogin={this.casLogin}
           menuActive={this.state.menuActive}
       />);
     } else if (PowerSearch.getStatus().loading) {
@@ -363,10 +379,9 @@ const SearchContainer = React.createClass({
               <div className="row">
                 <div className="col-md-12">
                   <SearchLogo />
-                    {/*<div className="form-inline my-2 my-lg-2">*/}
-                        {/*<button className="btn btn-info">Login</button>*/}
+                    <div className="form-inline my-2 my-lg-2">
                         {/*<a href="#" className="btn-default"><i className="fa fa-language"/>Indonesia</a>*/}
-                    {/*</div>*/}
+                    </div>
                 </div>
               </div>
               <div className="row">

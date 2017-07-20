@@ -1,5 +1,15 @@
 {
+  "cas": {
+    "baseUrl": "https://sso.ugm.ac.id/cas/",
+    "autoClose": true
+  },
   "public": {
+    "cas": {
+      "loginUrl": "https://sso.ugm.ac.id/cas/login",
+      "serviceParam": "service",
+      "popupWidth": 810,
+      "popupHeight": 610
+    },
     "search": {
       "scheme": "http",
       "host": "localhost",

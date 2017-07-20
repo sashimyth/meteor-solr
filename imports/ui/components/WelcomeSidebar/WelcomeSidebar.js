@@ -19,16 +19,19 @@ const WelcomeSidebar = React.createClass({
     changeMenu2(){
       this.props.changeActiveMenu(2);
     },
+    userAda(){
+        return Meteor.user();
+    },
 
     render(){
         return (
             <aside className="welcome-sidebar">
                 <div className="panel panel-default help-panel">
                     <div className="panel-heading clearfix">
-                        <strong>Bantuan</strong>
+                        <strong>Masuk untuk melihat konten</strong>
                     </div>
                     <div className="panel-body">
-                        Help instructions go here ...
+                        {this.userAda ?  <button className="btn btn-primary col-sm-12" onClick={this.props.casLogin}>Masuk</button> : <button className="btn btn-info" onClick={this.props.casLogout}>Keluar</button>}
                     </div>
                 </div>
                 <div className="list-group text-center">
