@@ -15,7 +15,7 @@ const ResultsCount = React.createClass({
     let totalResultsLabel = '';
     if (this.props.searchMetadata.totalResults >
         this.props.searchParams.resultsPerPage) {
-      totalResultsLabel = ` of ${this.props.searchMetadata.totalResults}`;
+      totalResultsLabel = ` dari ${this.props.searchMetadata.totalResults}`;
     }
     return totalResultsLabel;
   },
@@ -43,9 +43,9 @@ const ResultsCount = React.createClass({
   render() {
     return (
       <div className="results-count">
-        Showing results {this.resultsStartCount()} to {this.resultsStopCount()}
+        Menampilkan hasil ke {this.resultsStartCount()} sampai {this.resultsStopCount()}
         {this.totalResultsLabel()}
-        &nbsp;for <strong>{this.props.searchMetadata.keywords}</strong>
+        &nbsp;untuk kata kunci <strong>{this.props.searchMetadata.keywords}</strong>
       </div>
     );
   },

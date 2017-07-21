@@ -23,9 +23,14 @@ body
       cursor pointer
 aside
   min-height 600px
-  border-right 0px
-  border-left 1px solid #7e7e7e
-  padding-left 5%
+  border-left 0px
+  border-right 1px solid #7e7e7e
+  padding-right 10%
+
++above($mobileCutOff)
+  .row
+    aside
+      display block
 
 +above(800px)
   header

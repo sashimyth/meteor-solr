@@ -31,7 +31,7 @@ const WelcomeSidebar = React.createClass({
                         <strong>Masuk untuk melihat konten</strong>
                     </div>
                     <div className="panel-body">
-                        {this.userAda ?  <button className="btn btn-primary col-sm-12" onClick={this.props.casLogin}>Masuk</button> : <button className="btn btn-info" onClick={this.props.casLogout}>Keluar</button>}
+                        {this.userAda ?  <button className="btn btn-primary col-xs-12" onClick={this.props.casLogin}>Masuk</button> : <button className="btn btn-info" onClick={this.props.casLogout}>Keluar</button>}
                     </div>
                 </div>
                 <div className="list-group text-center">

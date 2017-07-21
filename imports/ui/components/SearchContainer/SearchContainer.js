@@ -274,8 +274,8 @@ const SearchContainer = React.createClass({
         />);
       } else if (this.data.searchMetadata.facets) {
       sidebarContent = (
-        <aside>
-          <h2>Refine Your Search</h2>
+        <aside id="facets-search-1" className="c collapse">
+          <h2>Perbaiki pencarian anda</h2>
           <SearchFacet
             key="subyek"
             name="Subyek"
@@ -358,12 +358,12 @@ const SearchContainer = React.createClass({
     }else {
       content = (
         <div className="row">
-          <div className="col-md-8">
-            {this.renderMain()}
-          </div>
-          <div className="col-md-4">
-            {this.renderSidebar()}
-          </div>
+            <div className="col-md-4">
+                {this.renderSidebar()}
+            </div>
+            <div className="col-md-8">
+                {this.renderMain()}
+            </div>
         </div>
       );
     };
@@ -389,6 +389,7 @@ const SearchContainer = React.createClass({
                 <div className="col-md-8">
                   <SearchBar
                     menuActive={this.state.menuActive}
+                    searchState={this.data.searchResults.length}
                     changeActiveMenu={this.changeActiveMenu}
                     contentState={this.state.contentChanged}
                     changeContentState={this.changeContentState}

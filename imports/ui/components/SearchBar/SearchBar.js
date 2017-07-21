@@ -241,9 +241,15 @@ const SearchBar = React.createClass({
   renderBackButton(){
     let backbutton;
     if (!this.props.contentState){
-      backbutton = (
-          <button className="btn hide btn-default" >Kembali</button>
-      );
+      if (this.props.searchState){
+          backbutton = (
+              <button className="btn btn-default filter hidden-lg hidden-md collapsed" data-toggle="collapse" data-target="#facets-search-1"><i className="glyphicon glyphicon-filter"></i></button>
+          );
+      }else{
+          backbutton = (
+              <button className="btn btn-default filter hide"><i className="glyphicon glyphicon-filter"></i></button>
+          );
+      }
     }else {
       backbutton = (
           <button className="btn btn-default" onClick={this.backResultButton} >❮ Kembali</button>
