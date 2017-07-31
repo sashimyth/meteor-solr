@@ -13,7 +13,7 @@ const PdfContent = React.createClass({
         var pages = [];
 
 
-        var url = '//localhost/pdf/' + this.props.result;
+        var url = '//10.9.8.104/pdf/' + this.props.result;
         // var url = '//cdn.mozilla.net/pdfjs/tracemonkey.pdf';
 
         // The workerSrc property shall be specified.
@@ -21,6 +21,8 @@ const PdfContent = React.createClass({
 
         // Asynchronous download of PDF
         var loadingTask = PDFJS.getDocument(url);
+
+        // console.log(url);
 
         loadingTask.promise.then(function(pdf) {
             console.log('PDF loaded');

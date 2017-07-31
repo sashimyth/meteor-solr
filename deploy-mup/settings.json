@@ -1,0 +1,104 @@
+{
+  "cas": {
+    "baseUrl": "https://sso.ugm.ac.id/cas/",
+    "autoClose": true
+  },
+  "public": {
+    "cas": {
+      "loginUrl": "https://sso.ugm.ac.id/cas/login",
+      "serviceParam": "service",
+      "popupWidth": 810,
+      "popupHeight": 610
+    },
+    "search": {
+      "scheme": "http",
+      "host": "10.9.8.102",
+      "port": 8983,
+      "core": "testcore",
+      "suggesterUrl": "/suggesthandler2",
+      "limitFields": [
+        "id",
+        "bahasa",
+        "isbn",
+        "klasifikasi",
+        "pengarang",
+        "kontributor",
+        "judul",
+        "edisi",
+        "kota_terbit",
+        "penerbit",
+        "th_terbit",
+        "jml_hlm",
+        "bibliografi",
+        "subyek",
+        "jenis_koleksi",
+        "file",
+        "file2"
+      ],
+      "flatFacets": {
+        "kontributor": {
+          "limit": 10,
+          "sort": "count"
+        },
+        "jenis_koleksi": {
+          "limit": 10,
+          "sort": "count"
+        },
+        "kota_terbit": {
+          "limit": 10,
+          "sort": "count"
+        },
+        "penerbit": {
+          "limit": 10,
+          "sort": "count"
+        },
+        "subyek": {
+          "limit": 10,
+          "sort": "count"
+        },
+        "th_terbit": {
+          "limit": 10,
+          "sort": "count"
+        }
+      },
+      "hierarchicalFacets": {
+        
+      },
+      "customFacetLabels": {
+        "jenis_koleksi": {
+          "mkl": "Makalah",
+          "atk": "Artikel",
+          "skrp": "Skripsi",
+          "bk": "Buku",
+          "pnlt": "Penelitian",
+          "klp": "Kliping"
+        }
+      }
+    },
+    "analyticsControl": {
+      "loggingEnabled": true,
+      "containers": [ "cloud", "database" ]
+    },
+    "analyticsSettings": {
+      "Google Analytics": {
+        "trackingId": "UA-1885741-2"
+      }
+    }
+  },
+  "private": {
+    "analytics": {
+      "jobs": {
+        "export": {
+          "enabled": false,
+          "schedule": "every 1 hour",
+          "endpointUrl": "https://someurl.xyz/analytics-capture"
+        },
+        "cleanup": {
+          "enabled": false,
+          "schedule": "on the first day of the month",
+          "monthRetainCount": "1"
+        }
+      }
+    }
+  }
+}
